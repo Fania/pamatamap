@@ -1,0 +1,36 @@
+#topic-clusters, #appendices {
+  visibility: hidden;
+}
+
+.cluster-rect {
+  fill: #ececec;
+}
+.cluster-text {
+  font-family: 'TeX Gyre Adventor', sans-serif;
+  font-weight: bold;
+  fill: #ececec;
+}
+.appendix-river {
+  fill: none;
+  stroke-width: 14.17322922;
+  stroke-linecap: square;
+}
+.appendix-lake {
+  stroke-width: 14.17322922;
+}
+.appendix-text {
+  font-family: 'TeX Gyre Adventor', sans-serif;
+  font-weight: bold;
+  font-size: 12.50000095px;
+  fill: #ffffff;
+}
+
+#creativity-line:hover {
+  stroke: #000000;
+}
+
+.line {
+  fill: none;
+  stroke-width: 32.67607117;
+  stroke-linecap: round;
+}
