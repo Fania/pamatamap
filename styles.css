@@ -1,4 +1,9 @@
-#topic-clusters, #appendices {
+input {
+  margin-right: 2em;
+}
+
+
+.hide {
   visibility: hidden;
 }
 
@@ -28,13 +33,22 @@
 .highlight:hover {
   stroke: #000000;
 }
-
 .highlight-group:hover path {
   stroke: #000000;
+}
+.highlight-group:hover text {
+  fill: #000000;
 }
 
 .line {
   fill: none;
   stroke-width: 32.67607117;
   stroke-linecap: round;
+}
+
+.line-name {
+  font-weight: bold;
+  font-family: 'TeX Gyre Adventor', sans-serif;
+  font-size: 7.5px;
+  line-height: 1.25;
 }

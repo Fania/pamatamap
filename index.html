@@ -10,6 +10,21 @@
 
   <!-- <img src="map.svg" alt="Fania's PhD map"> -->
 
+<header>
+  <label for="show-clusters">Clusters</label>
+  <input id="show-clusters" type="checkbox" checked>
+  <!-- <label for="show-labels">Labels</label>
+  <input id="show-labels" type="checkbox" checked> -->
+  <label for="show-lines">Lines</label>
+  <input id="show-lines" type="checkbox" checked>
+  <label for="show-appendices">Appendices</label>
+  <input id="show-appendices" type="checkbox" checked>
+</header>
+
+
+
+
+
 
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <!-- Polished with Fania's sweat and tears -->
@@ -176,19 +191,34 @@
         </text>
       </g> <!-- END OF APPENDICES -->
 
+      <!-- CHAPTER LINES -->
       <g id="lines">
 
         <!-- INTRODUCTION LINE -->
-        <path id="introduction-line" class="highlight line"
-          stroke=#54c6e9
-          transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
-          d="m -1152,-43 304.33465,-0.31366 -0.47028,267.732592 c 420.34184,1.244998 840.68218,0.0089 1261.02567,0.458334 l 765.39396,763.075094 764.067,-0.59784" />
+        <g id="introduction-line-group" class="highlight-group">
+          <path id="introduction-line" class="line"
+            stroke=#54c6e9
+            transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
+            d="m -1152,-43 304.33465,-0.31366 -0.47028,267.732592 c 420.34184,1.244998 840.68218,0.0089 1261.02567,0.458334 l 765.39396,763.075094 764.067,-0.59784" />
+          <text id="introduction-line-name" class="line-name"
+            fill=#54c6e9
+            x=817 y=448>
+            Introduction
+          </text>
+        </g>
 
         <!-- INSPIRATIONS LINE -->
-        <path id="inspirations-line" class="highlight line"
+        <g id="inspirations-line-group" class="highlight-group">
+        <path id="inspirations-line" class="line"
           stroke=#aa87de
           transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
           d="m 222.58699,384.49971 -791.6722,0.0242 -354.75692,354.66091 -1.239,1422.80489" />
+          <text id="inspirations-line-name" class="line-name"
+            fill=#aa87de
+            x=403 y=352>
+            Inspirations
+          </text>
+        </g>
 
         <!-- METHODOLOGY LINE -->
         <g id="methodology-line-group" class="highlight-group">
@@ -200,55 +230,122 @@
             stroke=#0055d4
             transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
             d="m 330,1150 -600,0" />
+          <text id="methodology-line-name" class="line-name"
+            fill=#0055d4
+            x=545 y=-556
+            transform=rotate(90)>
+            Methodology
+          </text>
         </g>
 
         <!-- PATAPHYSICS LINE -->
-        <path id="pataphysics-line" class="highlight line"
+        <g id="pataphysics-line-group" class="highlight-group">
+        <path id="pataphysics-line" class="line"
           stroke=#ff80e5
           transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
           d="m 1945,1418 -486.5234,-2.7425 -1081.65984,-1085.1895 -1352.09806,2.03357 -0.075,1832.75473" />
+        <text id="pataphysics-line-name" class="line-name"
+           fill=#ff80e5
+           x=817 y=526>
+           Pataphysics
+          </text>
+        </g>
 
         <!-- CREATIVITY LINE -->
-        <path id="creativity-line" class="highlight line"
+        <g id="creativity-line-group" class="highlight-group">
+        <path id="creativity-line" class="line"
           stroke=#ffcc00
           transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
           d="m -1632.96503,481.55773 -0.177,-859.67068 1493.93345,-0.0774 412.37435,412.84923 0.19293,1167.03863 -1182.66603,0.1556 z" />
+        <text id="creativity-line-name" class="line-name"
+           fill=#ffcc00
+           x=412 y=487>
+           Creativity
+          </text>
+        </g>
 
         <!-- TECHNOLOGY LINE -->
-        <path id="technology-line" class="highlight line"
-          stroke=#ff6600
-          transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
-          d="m -137.14892,-681.72506 1445.49369,1446.56439 -0.5937,524.93688 -564.15693,565.6002 c -281.11864,-0.613 -313.26016,0.6763 -1167.05397,0.063 l -547.8643,-544.7603 -980.0893,-0.4484" />
+        <g id="technology-line-group" class="highlight-group">
+          <path id="technology-line" class="highlight line"
+            stroke=#ff6600
+            transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
+            d="m -137.14892,-681.72506 1445.49369,1446.56439 -0.5937,524.93688 -564.15693,565.6002 c -281.11864,-0.613 -313.26016,0.6763 -1167.05397,0.063 l -547.8643,-544.7603 -980.0893,-0.4484" />
+          <text id="technology-line-name" class="line-name"
+            fill=#ff6600
+            x=675 y=-224
+            transform=rotate(45)>
+            Technology
+          </text>
+        </g>
 
         <!-- EVALUATION LINE -->
-        <path id="evaluation-line" class="highlight line"
-          stroke=#216778
-          transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
-          d="m -1950.45983,812.1161 153.295,0.47198 0.143,-1244.77586 1684.83659,-0.21293 140.717497,142.01672 399.029283,-394.99937" />
+        <g id="evaluation-line-group" class="highlight-group">
+          <path id="evaluation-line" class="line"
+            stroke=#216778
+            transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
+            d="m -1950.45983,812.1161 153.295,0.47198 0.143,-1244.77586 1684.83659,-0.21293 140.717497,142.01672 399.029283,-394.99937" />
+          <text id="evaluation-line-name" class="line-name"
+            fill=#216778
+            x=300 y=-164
+            transform=rotate(90)>
+            Evaluation
+          </text>
+        </g>
 
         <!-- FOUNDATIONS LINE -->
-        <path id="foundations-line" class="highlight line"
-          stroke=#aa0088
-          transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
-          d="m 382.69726,777.96721 0.30583,-796.46972 -470.53745,-468.77243 -1600.28237,0.0901 c 0,0 -0.2223,2275.25025 0.4586,2452.28045 h -264.8738" />
+        <g id="foundations-line-group" class="highlight-group">
+          <path id="foundations-line" class="line"
+            stroke=#aa0088
+            transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
+            d="m 382.69726,777.96721 0.30583,-796.46972 -470.53745,-468.77243 -1600.28237,0.0901 c 0,0 -0.2223,2275.25025 0.4586,2452.28045 h -264.8738" />
+          <text id="foundations-line-name" class="line-name"
+            fill=#aa0088
+            x=580 y=-184
+            transform=rotate(90)>
+            Foundations
+          </text>
+        </g>
 
         <!-- INTERPRETATION LINE -->
-        <path id="interpretation-line" class="highlight line"
-          stroke=#6600ff
-          transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
-          d="m -1022.99913,-95.16077 -555.441,556.01943 -0.1652,1231.22405 1460.43195,-0.2107 502.13837,-501.716" />
+        <g id="interpretation-line-group" class="highlight-group">
+          <path id="interpretation-line" class="line"
+            stroke=#6600ff
+            transform="matrix(0.18358446,0,0,0.18358446,504.35018,271.92016)"
+            d="m -1022.99913,-95.16077 -555.441,556.01943 -0.1652,1231.22405 1460.43195,-0.2107 502.13837,-501.716" />
+          <text id="interpretation-line-name" class="line-name"
+            fill=#6600ff
+            x=419 y=577>
+            Interpretation
+          </text>
+        </g>
 
         <!-- IMPLEMENTATION LINE -->
-        <path id="implementation-line" class="highlight line"
-          stroke=#008066
-          transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
-          d="m 1944,-126 -577.8065,574.30863 -0.066,875.15089 -596.52126,593.3708 -1800.22324,0.9643 0.1013,-979.07202" />
+        <g id="implementation-line-group" class="highlight-group">
+          <path id="implementation-line" class="highlight line"
+            stroke=#008066
+            transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
+            d="m 1944,-126 -577.8065,574.30863 -0.066,875.15089 -596.52126,593.3708 -1800.22324,0.9643 0.1013,-979.07202" />
+          <text id="implementation-line-name" class="line-name"
+            fill=#008066
+            x=370 y=778
+            transform=rotate(-45)>
+            Implementation
+          </text>
+        </g>
 
         <!-- APPLICATIONS LINE -->
-        <path id="applications-line" class="highlight line"
-          stroke=#292a78
-          transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
-          d="M 1942,2061 1198,1320 1198,927 437,167 -512,167 -780,-95 -930,-95 -1520,495" />
+        <g id="applications-line-group" class="highlight-group">
+          <path id="applications-line" class="line"
+            stroke=#292a78
+            transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
+            d="M 1942,2061 1198,1320 1198,927 437,167 -512,167 -780,-95 -930,-95 -1520,495" />
+          <text id="applications-line-name" class="line-name"
+            fill=#212178
+            x=1017 y=-154
+            transform=rotate(45)>
+            Applications
+          </text>
+        </g>
 
         <!-- PATANALYSIS LINE -->
         <g id="patanalysis-line-group" class="highlight-group">
@@ -262,6 +359,11 @@
             stroke=#ff0053
             transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
             d="m 835,1260 0,870" />
+          <text id="patanalysis-line-name" class="line-name"
+            fill=#ff0053 
+            x=673 y=168>
+            Patanalysis
+          </text>
         </g>
 
         <!-- ASPIRATIONS LINE -->
@@ -274,6 +376,12 @@
             stroke=#88aa00
             transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
             d="m 1275,1490 600,600" />
+          <text id="aspirations-line-name" class="line-name"
+            fill=#88aa00
+            x=373 y=802
+            transform=rotate(-45)>
+            Aspirations
+          </text>
         </g>
 
         <!-- OUTRODUCTION LINE -->
@@ -290,31 +398,15 @@
             stroke=#0080b3
             transform="matrix(0.18358446,0,0,0.18358446,503.35018,270.92016)"
             d="m -10,-250 0,520" />
+          <text id="outroduction-line-name" class="line-name"
+            fill=#0080b3
+            x=814 y=472>
+            Outroduction
+          </text>
         </g>
-        
-        
-
-        
-
-
-
-
-      <!-- transform="translate(101.58267,121.51571)" -->
-
       </g>
+      <!-- END CHAPTER LINES -->
 
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#aa0088;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="584.18024"
-           y="-186.89258"
-           id="text4276"
-           transform="rotate(90.199652)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5497"
-             x="584.18024"
-             y="-186.89258">Foundations</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;line-height:0%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -326,6 +418,7 @@
              x="144.28287"
              y="241.27536"
              id="tspan4324">Models</tspan></text>
+        
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;line-height:0%;font-family:'Bookman Old Style';-inkscape-font-specification:'Bookman Old Style, Light';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1440,156 +1533,12 @@
              id="tspan4278-84-6-0-3-8"
              x="281.97028"
              y="566.3172">Poetry</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#aa87de;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="403.7756"
-           y="351.79703"
-           id="text4276-21"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan4278-0"
-             x="403.7756"
-             y="351.79703">Inspirations</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff80e5;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="817.31128"
-           y="526.63202"
-           id="text4276-21-6"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan4278-0-8"
-             x="817.31128"
-             y="526.63202">Pataphysics</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#008066;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="370.11102"
-           y="778.2865"
-           id="text4276-21-6-6"
-           transform="rotate(-44.931522)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan4278-0-8-7"
-             x="370.11102"
-             y="778.2865">Implementation</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#88aa00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="373.98801"
-           y="801.94885"
-           id="text4276-21-6-6-4"
-           transform="rotate(-44.931522)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5314"
-             x="373.98801"
-             y="801.94885">Aspirations</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#212178;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="1017.3157"
-           y="-148.80692"
-           id="text4276-21-6-3"
-           transform="rotate(44.727901)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5334"
-             x="1017.3157"
-             y="-148.80692">Applications</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff0053;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="673.81946"
-           y="168.10109"
-           id="text4276-21-6-66"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5364"
-             x="673.81946"
-             y="168.10109">Patanalysis</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="545.19171"
-           y="-558.00208"
-           id="text4276-21-6-66-9"
-           transform="rotate(90.281223)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5384"
-             x="545.19171"
-             y="-558.00208">Methodology</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#216778;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="300.55096"
-           y="-166.67975"
-           id="text4276-21-6-66-9-8"
-           transform="rotate(90.281223)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5404"
-             x="300.55096"
-             y="-166.67975">Evaluation</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="675.65228"
-           y="-222.29356"
-           id="text4276-21-6-3-7"
-           transform="rotate(44.727901)"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5425"
-             x="675.65228"
-             y="-222.29356">Technology</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#54c6e9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="817.27747"
-           y="448.36758"
-           id="text4276-21-6-4"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5453"
-             x="817.27747"
-             y="448.36758">Introduction</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#0080b3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="814.22937"
-           y="472.26187"
-           id="text4276-21-6-8"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5455"
-             x="814.22937"
-             y="472.26187">Outroduction</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#6600ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="419.85025"
-           y="577.81769"
-           id="text4276-21-3"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5475"
-             x="419.85025"
-             y="577.81769">Interpretation</tspan></text>
         
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="412.0632"
-           y="487.89017"
-           id="text4276-21-3-1"><tspan
-             style="font-size:7.5px;line-height:1.25"
-             sodipodi:role="line"
-             id="tspan5495"
-             x="412.0632"
-             y="487.89017">Creativity</tspan></text>
+        
+        
+        
+        
+        
         <rect
            style="display:inline;fill:#0080b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect4280-3-4-4-2-1-4-6-2"
@@ -6956,6 +6905,6 @@
 
 
 
-  
+  <script src="scripts.js"></script>
 </body>
 </html>
