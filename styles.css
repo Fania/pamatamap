@@ -2,11 +2,11 @@ input {
   margin-right: 2em;
 }
 
-
 .hide {
   visibility: hidden;
 }
 
+/* TOPIC CLUSTERS */
 .cluster-rect {
   fill: #ececec;
 }
@@ -15,6 +15,8 @@ input {
   font-weight: bold;
   fill: #ececec;
 }
+
+/* APPENDICES */
 .appendix-river {
   fill: none;
   stroke-width: 14.17322922;
@@ -30,6 +32,7 @@ input {
   fill: #ffffff;
 }
 
+/* HOVER OVER EFFECTS */
 .highlight:hover {
   stroke: #000000;
 }
@@ -39,16 +42,27 @@ input {
 .highlight-group:hover text {
   fill: #000000;
 }
+.highlight-river:hover path {
+  stroke: #000000;
+}
+.highlight-river:hover text {
+  fill: #ffffff;
+}
 
+/* CHAPTER LINES */
 .line {
   fill: none;
   stroke-width: 32.67607117;
   stroke-linecap: round;
 }
-
 .line-name {
   font-weight: bold;
   font-family: 'TeX Gyre Adventor', sans-serif;
   font-size: 7.5px;
   line-height: 1.25;
+}
+.station-label {
+  font-size: 7.5px;
+  line-height: 0.80000001;
+  font-family: 'Bookman Old Style', serif;
 }

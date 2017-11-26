@@ -8,10 +8,12 @@ let checkAppendices = document.getElementById("show-appendices");
 let appendices = document.getElementById("appendices");
 let lines = document.getElementById("lines");
 let clusters = document.getElementById("topic-clusters");
+let labels = document.getElementById("station-labels");
 
 let toggleClusters = false; // unhidden
 let toggleAppendices = false; // unhidden
 let toggleLines = false; // unhidden
+let toggleLabels = false; // unhidden
 
 checkClusters.addEventListener("change", function(){
   if (toggleClusters) {
@@ -40,6 +42,16 @@ checkLines.addEventListener("change", function(){
   } else {
     lines.classList.add("hide");
     toggleLines = true;
+  }
+});
+
+checkLabels.addEventListener("change", function(){
+  if (toggleLabels) {
+    labels.classList.remove("hide");
+    toggleLabels = false;
+  } else {
+    labels.classList.add("hide");
+    toggleLabels = true;
   }
 });
 
