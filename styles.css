@@ -25,7 +25,11 @@
   fill: #ffffff;
 }
 
-#creativity-line:hover {
+.highlight:hover {
+  stroke: #000000;
+}
+
+.highlight-group:hover path {
   stroke: #000000;
 }
 
