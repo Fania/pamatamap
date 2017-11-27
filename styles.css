@@ -2,6 +2,10 @@ input {
   margin-right: 2em;
 }
 
+/* svg {
+  width: 100%;
+} */
+
 .hide {
   visibility: hidden;
 }
