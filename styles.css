@@ -6,9 +6,27 @@ input {
   width: 100%;
 } */
 
-#topic-clusters, #appendices {
+/* #introduction-line-group, #introduction-1-labels, */
+/* #inspirations-line-group, #inspirations-2-labels, */
+/* #methodology-line-group, #methodology-3-labels, */
+/* #technology-line-group, #technology-6-labels, */
+/* #evaluation-line-group, #evaluation-7-labels, */
+/* #patanalysis-line-group, #patanalysis-12-labels, */
+#appendices,
+#topic-clusters {
   visibility: hidden;
 }
+
+/* fade put lines that are not hovered on */
+#lines:hover .highlight-group {
+  opacity: 0.2;
+  transition: 3s;
+}
+#lines:hover .highlight-group:hover {
+  opacity: 1;
+}
+
+
 
 .hide {
   visibility: hidden;
@@ -41,20 +59,18 @@ input {
 }
 
 /* HOVER OVER EFFECTS */
-.highlight:hover {
-  stroke: #000000;
-}
-.highlight-group:hover path {
+.highlight:hover, .highlight-group:hover path, .highlight-river:hover path {
   stroke: #000000;
 }
 .highlight-group:hover text {
   fill: #000000;
 }
-.highlight-river:hover path {
-  stroke: #000000;
-}
-.highlight-river:hover text {
+.highlight-river:hover text, .highlight-lake:hover text {
   fill: #ffffff;
+}
+.highlight-lake:hover path {
+  stroke: #000000;
+  fill: #000000;
 }
 
 /* CHAPTER LINES */
@@ -78,3 +94,8 @@ input {
   width: 1.3436904;
   height: 2.2674296;
 } */
+
+.appendix-port {
+  fill: #b1d7ff;
+  stroke: #000007;
+}
