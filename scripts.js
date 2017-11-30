@@ -1,14 +1,18 @@
 (function(){ 
   
+let checkCoords = document.getElementById("show-coords");
 let checkClusters = document.getElementById("show-clusters");
 let checkLabels = document.getElementById("show-labels");
 let checkLines = document.getElementById("show-lines");
+let checkOldLines = document.getElementById("show-oldlines");
 let checkAppendices = document.getElementById("show-appendices");
+let checkExchanges = document.getElementById("show-exchanges");
 
+let coords = document.getElementById("coordinates");
+let exchanges = document.getElementById("exchanges");
 let appendices = document.getElementById("appendices");
 let lines = document.getElementById("lines");
-let clusters = document.getElementById("topic-clusters");
-let labels = document.getElementById("station-labels");
+let clusters = document.getElementById("clusters");
 
 let check1 = document.getElementById("show-1");
 let check2 = document.getElementById("show-2");
@@ -24,28 +28,15 @@ let check11 = document.getElementById("show-11");
 let check12 = document.getElementById("show-12");
 let check13 = document.getElementById("show-13");
 let check14 = document.getElementById("show-14");
-
+// HIDE AND SHOW INDIVIDUAL LINES
 let linesOnly = document.querySelectorAll("[id$='line-group']");
-// console.log(linesOnly);
-
 let toggleIL = [false,false,false,false,false,false,false,false,false,false,false,false,false,false];
-
-
 for (let i=1; i<=14; i++) {
-  // console.log(`inside for loop ${i}`);
   let item = eval(`check${i}`);
-  // console.log(`item: ${item}`);
   item.addEventListener("change", function(){
-    // console.log(`inside for event listener for ${item}`);
     let num = i - 1;
-    // console.log(`num: ${num}`);
-    // console.log(`linesOnly[${num}]: ${linesOnly[num]}`);
     let elemID = linesOnly[num].id;
-    // console.log(`num: ${num}, id: ${elemID}`);
     let elem = document.getElementById(elemID);
-    // console.log(`elem: ${elem}`);
-    // let toggle = eval(`toggle${i}`);
-    // console.log(`toggle: ${toggleIL[num]}`);
     if (toggleIL[num]) { // currently hidden
       elem.classList.remove("hide");
       toggleIL[num] = false;
@@ -54,14 +45,52 @@ for (let i=1; i<=14; i++) {
       toggleIL[num] = true;
     }
   });
-
 }
 
 
+let toggleCoords = false; // unhidden
 let toggleClusters = true; // hidden
+let toggleExchanges = true; // hidden
 let toggleAppendices = true; // hidden
-let toggleLines = false; // unhidden
+// let toggleLines = false; // unhidden
 let toggleLabels = false; // unhidden
+let toggleOldLines = false; // unhidden
+
+checkCoords.addEventListener("change", function(){
+  if (toggleCoords) {
+    coords.classList.remove("hide");
+    toggleCoords = false;
+  } else {
+    coords.classList.add("hide");
+    toggleCoords = true;
+  }
+});
+
+
+// HIDE AND SHOW OLD LINES
+// let oldLines = document.querySelectorAll(".old-line");
+// let toggleOL = [false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+// checkOldLines.addEventListener("change", function(){
+//   for (i=0; i<oldLines.length; i++) {
+//     if (toggleOL[i]) {
+//       oldLines[i].classList.remove("hide");
+//       toggleOL[i] = false;
+//     } else {
+//       oldLines[i].classList.add("hide");
+//       toggleOL[i] = true;
+//     }
+//   }
+// });
+
+checkExchanges.addEventListener("change", function(){
+  if (toggleExchanges) {
+    exchanges.classList.remove("hide");
+    toggleExchanges = false;
+  } else {
+    exchanges.classList.add("hide");
+    toggleExchanges = true;
+  }
+});
 
 checkClusters.addEventListener("change", function(){
   if (toggleClusters) {
@@ -83,25 +112,25 @@ checkAppendices.addEventListener("change", function(){
   }
 });
 
-checkLines.addEventListener("change", function(){
-  if (toggleLines) {
-    lines.classList.remove("hide");
-    toggleLines = false;
-  } else {
-    lines.classList.add("hide");
-    toggleLines = true;
-  }
-});
+// checkLines.addEventListener("change", function(){
+//   if (toggleLines) {
+//     lines.classList.remove("hide");
+//     toggleLines = false;
+//   } else {
+//     lines.classList.add("hide");
+//     toggleLines = true;
+//   }
+// });
 
-checkLabels.addEventListener("change", function(){
-  if (toggleLabels) {
-    labels.classList.remove("hide");
-    toggleLabels = false;
-  } else {
-    labels.classList.add("hide");
-    toggleLabels = true;
-  }
-});
+// checkLabels.addEventListener("change", function(){
+//   if (toggleLabels) {
+//     labels.classList.remove("hide");
+//     toggleLabels = false;
+//   } else {
+//     labels.classList.add("hide");
+//     toggleLabels = true;
+//   }
+// });
 
 
 

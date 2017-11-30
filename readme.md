@@ -20,3 +20,27 @@
     <use xlink:href="#original-rect" x="150" y="10" />
 <!-- x/y of the <use> element are added to x/y of the referenced <rect> -->
 </svg>
+
+
+## Rotate 
+
+rect
+
+<rect id="port-D-patanalysis" class="appendix-port"
+    width=7 height=7 x=180 y=322
+    transform="rotate(45)" />
+
+text
+
+<text id="methodology-line-name" class="line-name"
+    fill=#0055d4
+    x=490 y=400 
+    transform="rotate(90 490 400)"
+    >
+    Methodology
+</text>
+
+
+## Animation
+
+[](https://codepen.io/SaraSoueidan/pen/ef9f0e1242263cf23067b09be894cfa9)

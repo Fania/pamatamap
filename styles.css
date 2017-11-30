@@ -2,9 +2,15 @@ input {
   margin-right: 2em;
 }
 
-/* svg {
-  width: 100%;
-} */
+#test-svg {
+  border: 1px solid black;
+}
+
+
+svg {
+  /* width: 100%; */
+  border: 1px solid black;
+}
 
 /*
 all lines (incl. labels): 
@@ -15,12 +21,20 @@ just the lines:
 
 
 
+/* UTILITY */
+
+.hide {
+  visibility: hidden;
+}
+.centerorigin {
+  transform-origin: 50% 50%;
+}
 
 
-
-
-
-*/
+/* ends in */
+[class$='label'] {
+  visibility: hidden;
+}
 
 /* shared stations? */
 
@@ -31,10 +45,12 @@ just the lines:
 /* #evaluation-line-group, #evaluation-7-labels, */
 /* #patanalysis-line-group, #patanalysis-12-labels, */
 /* [id$="line-group"], */
-/* #appendices,
-#topic-clusters {
+/* #appendices, */
+/* #topic-clusters, */
+.old-line
+{
   visibility: hidden;
-} */
+}
 
 /* fade put lines that are not hovered on */
 #lines:hover .highlight-group {
@@ -55,10 +71,6 @@ just the lines:
   font-size: 10px;
 } */
 
-
-.hide {
-  visibility: hidden;
-}
 
 /* TOPIC CLUSTERS */
 .cluster-rect {
@@ -85,6 +97,11 @@ just the lines:
   font-size: 12.50000095px;
   fill: #ffffff;
 }
+.appendix-port {
+  fill: #b1d7ff;
+  stroke: #000007;
+  transform-origin: 50% 50%;
+}
 
 /* HOVER OVER EFFECTS */
 .highlight:hover, .highlight-group:hover path, .highlight-river:hover path {
@@ -103,6 +120,11 @@ just the lines:
 
 /* CHAPTER LINES */
 .line {
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+.old-line {
   fill: none;
   stroke-width: 32.67607117;
   stroke-linecap: round;
@@ -124,7 +146,16 @@ just the lines:
   height: 2.2674296;
 } */
 
-.appendix-port {
-  fill: #b1d7ff;
-  stroke: #000007;
+/* EXCHANGES */
+/* starts in */
+[class^='exchange'] {
+  /* visibility: hidden; */
+}
+
+
+
+/* SHAPES */
+.shape-circle {
+  fill: #ffffff; 
+  stroke: #000000;
 }
