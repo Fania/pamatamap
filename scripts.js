@@ -12,6 +12,7 @@ let coords = document.getElementById("coordinates");
 let exchanges = document.getElementById("exchanges");
 let appendices = document.getElementById("appendices");
 let lines = document.getElementById("lines");
+let labels = document.getElementById("labels");
 let clusters = document.getElementById("clusters");
 
 let check1 = document.getElementById("show-1");
@@ -28,24 +29,66 @@ let check11 = document.getElementById("show-11");
 let check12 = document.getElementById("show-12");
 let check13 = document.getElementById("show-13");
 let check14 = document.getElementById("show-14");
+
 // HIDE AND SHOW INDIVIDUAL LINES
 let linesOnly = document.querySelectorAll("[id$='line-group']");
+// console.log(linesOnly);
+let labelsOnly = document.querySelectorAll("[id$='labels-group']");
+// console.log(labelsOnly);
 let toggleIL = [false,false,false,false,false,false,false,false,false,false,false,false,false,false];
 for (let i=1; i<=14; i++) {
   let item = eval(`check${i}`);
   item.addEventListener("change", function(){
     let num = i - 1;
-    let elemID = linesOnly[num].id;
-    let elem = document.getElementById(elemID);
+    let lineID = linesOnly[num].id;
+    let labelsID = labelsOnly[num].id;
+    let line = document.getElementById(lineID);
+    let labels = document.getElementById(labelsID);
+    // console.log(line, labels);
     if (toggleIL[num]) { // currently hidden
-      elem.classList.remove("hide");
+      line.classList.remove("hide");
+      labels.classList.remove("hide");
       toggleIL[num] = false;
     } else { // currently shown
-      elem.classList.add("hide");
+      line.classList.add("hide");
+      labels.classList.add("hide");
       toggleIL[num] = true;
     }
   });
 }
+
+// hover lines and labels
+for (let i=1; i<=14; i++) {
+  let num = i - 1;
+  let lineID = linesOnly[num].id;
+  let labelsID = labelsOnly[num].id;
+  let line = document.getElementById(lineID);
+  let labels = document.getElementById(labelsID);
+  // console.log(`loop ${i}: ${lineID} ${labelsID}`);
+  line.addEventListener("mouseover", function(){
+    // console.log(`mouseover ${lineID} ${i}`);
+    for (let k=1; k<=14; k++) {
+      let numk = k - 1;
+      // console.log(`${k} add dim to ${linesOnly[numk].id} and ${labelsOnly[numk].id}`);
+      linesOnly[numk].classList.add("dim");
+      labelsOnly[numk].classList.add("dim");
+    }
+    // console.log(`remove dim from ${lineID} and ${labelsID}`);
+    line.classList.remove("dim");
+    labels.classList.remove("dim");
+  });
+  line.addEventListener("mouseout", function(){
+    // console.log(`mouseout ${lineID} ${num}`);
+    for (let k=1; k<=14; k++) {
+      let numk = k - 1;
+      // console.log(`${k} remove dim to ${linesOnly[numk].id}`);
+      linesOnly[numk].classList.remove("dim");
+      labelsOnly[numk].classList.remove("dim");
+    }
+  });
+}
+
+
 
 
 let toggleCoords = false; // unhidden

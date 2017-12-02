@@ -19,6 +19,7 @@ all lines (incl. labels):
 just the lines:
 [id$="line-group"]
 
+*/
 
 
 /* UTILITY */
@@ -30,10 +31,20 @@ just the lines:
   transform-origin: 50% 50%;
 }
 
+.dim {
+  opacity: 0.2;
+  transition: 3s;
+}
+
+.undim {
+  opacity: 1;
+}
+
+
 
 /* ends in */
 [class$='label'] {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 /* shared stations? */
@@ -52,24 +63,6 @@ just the lines:
   visibility: hidden;
 }
 
-/* fade put lines that are not hovered on */
-#lines:hover .highlight-group {
-  opacity: 0.2;
-  transition: 3s;
-}
-#lines:hover .highlight-group:hover {
-  opacity: 1;
-}
-#lines:hover .station-label-group {
-  opacity: 0.2;
-  transition: 3s;
-}
-#lines:hover .highlight-group:hover .station-label-group {
-  opacity: 1;
-}
-/* #lines:hover .highlight-group:hover .station-label-group .station-label {
-  font-size: 10px;
-} */
 
 
 /* TOPIC CLUSTERS */
@@ -104,7 +97,7 @@ just the lines:
 }
 
 /* HOVER OVER EFFECTS */
-.highlight:hover, .highlight-group:hover path, .highlight-river:hover path {
+/* .highlight:hover, .highlight-group:hover path, .highlight-river:hover path {
   stroke: #000000;
 }
 .highlight-group:hover text {
@@ -116,7 +109,7 @@ just the lines:
 .highlight-lake:hover path {
   stroke: #000000;
   fill: #000000;
-}
+} */
 
 /* CHAPTER LINES */
 .line {

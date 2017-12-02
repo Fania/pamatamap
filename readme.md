@@ -30,6 +30,19 @@ rect
     width=7 height=7 x=180 y=322
     transform="rotate(45)" />
 
+
+<use xlink:href="#station-rect" x="20" y="80" fill="#54c6e9" />
+<use xlink:href="#station-rect" x="20" y="90" fill="#54c6e9" 
+    transform="rotate(-45, 20.67 91.1)" />
+<use xlink:href="#station-rect" x="20" y="70" fill="#54c6e9" 
+    transform="rotate(45, 20.67 71.1)" />
+<use xlink:href="#station-rect" x="20" y="60" fill="#54c6e9" 
+    transform="rotate(90, 20.67 61.1)" />
+
+
+
+
+
 text
 
 <text id="methodology-line-name" class="line-name"
