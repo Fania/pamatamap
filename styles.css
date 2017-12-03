@@ -36,8 +36,13 @@ just the lines:
   transition: 3s;
 }
 
-.undim {
-  opacity: 1;
+.undimtext {
+  fill: #000000;
+}
+
+.dimtext {
+  fill: #eeeeee;
+  transition: 3s;
 }
 
 

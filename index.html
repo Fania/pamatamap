@@ -129,10 +129,76 @@ viewBox="130 130 750 550" -->
 
   <!-- DEFINITIONS -->
   <defs>
-    <symbol id="station-rect">
-      <rect  width="1.3436906" height="2.2674301"/>
-    </symbol>
-  </defs>
+    <rect id="station-rect" width="1.3436906" height="2.2674301" />
+    <circle id="exchange-circle" r="4" stroke="black" fill="white" />
+
+    <g id="extest">
+      <rect x="0" y="0" width="10" height="3" fill="black"/>
+      <rect x="-1" y="1" width="12" height="1" fill="white"/>
+    </g>
+
+    <!-- <g id="exchange-connector">
+      <line x1="10" y1="40" x2="12" y2="40" stroke="black" />
+      <line x1="10" y1="41" x2="12" y2="41" stroke="white" />
+      <line x1="10" y1="42" x2="12" y2="42" stroke="black" />
+    </g> -->
+
+    <!-- <g id="testShort">
+      <clipPath id="exShort">
+        <rect x="0" y="0" width="3.5" height="3" />
+      </clipPath>
+      <use xlink:href="#exchange-circle" x="5" y="5" />
+      <use xlink:href="#exchange-circle" x="15" y="5" />
+      <use xlink:href="#extest" x="8.25" y="3.5" clip-path="url(#exShort)"/>
+    </g> -->
+
+    <!-- <g id="testLong">
+      <clipPath id="exLong">
+        <rect x="0" y="0" width="3.5" height="3" />
+      </clipPath>
+      <use xlink:href="#exchange-circle" x="5" y="5" />
+      <use xlink:href="#exchange-circle" x="15" y="5" />
+      <use xlink:href="#extest" x="8.25" y="3.5" clip-path="url(#exLong)"/>
+    </g> -->
+
+    <rect id="port" class="appendix-port"
+      width="7" height="7" x="0" y="0" transform="rotate(45)"/>
+   
+  </defs> <!-- END DEFINITIONS -->
+
+
+  <!-- PLAYGROUND -->
+
+  <!-- <use xlink:href="#port" x="5" y="5"/> -->
+
+
+
+  <!-- <use xlink:href="#exchange-circle" x="5" y="5" />
+  <use xlink:href="#exchange-circle" x="15" y="5" />
+  <line x1="8.25" y1="4" x2="12" y2="4" stroke="black" />
+  <line x1="8.25" y1="5" x2="12" y2="5" stroke="white" />
+  <line x1="8.25" y1="6" x2="12" y2="6" stroke="black" />
+
+  <rect x="10" y="20" width="20" height="3" fill="black"/>
+  <rect x="9.5" y="21" width="21" height="1" fill="white"/>
+   -->
+
+
+  <!-- <clipPath id="exShort"><rect x="0" y="0" width="5" height="3" /></clipPath>
+  <use xlink:href="#exchange-circle" x="5" y="5" />
+  <use xlink:href="#exchange-circle" x="15" y="5" />
+  <use xlink:href="#extest" x="10" y="20" clip-path="url(#exShort)"/> -->
+
+
+  <!-- <use xlink:href="#exchange-connectors" x="10" y="80" /> -->
+
+  
+
+
+
+
+  <!-- END PLAYGROUND -->
+
 
 
 
@@ -388,9 +454,6 @@ viewBox="130 130 750 550" -->
               x=678 y=306>
               Introduction
             </text>
-            <use id="station-guide-rect" xlink:href="#station-rect" 
-              x="500" y="226" fill="#54c6e9" 
-              transform="rotate(45, 500 226)" />
           </a>
           
         </g>
@@ -4893,123 +4956,132 @@ viewBox="130 130 750 550" -->
       <g id="introduction-1-labels-group" class="station-label-group">
         <text id="station-questions" class="station-label"
           x="630" y="305">Questions</text>
+        <use xlink:href="#exchange-circle" x="645" y="312" />
+        <use xlink:href="#exchange-circle" x="624.3" y="312" />
+        <use xlink:href="#exchange-circle" x="614" y="312" />
+        <use xlink:href="#exchange-circle" x="604.5" y="312" />
+        <use xlink:href="#exchange-circle" x="593" y="312" />
         <text id="station-contributions1" class="station-label"
           x="510" y="310">
           <tspan x="510" dy="1em">Contributions</tspan>
           <tspan x="550" dy="1em">I</tspan>
         </text>
+        <use xlink:href="#exchange-circle" x="570" y="304" />
         <text id="station-publications" class="station-label"
           x="548" y="254">Publications</text>
+        <use xlink:href="#exchange-circle" x="536.5" y="270" />
+        <use xlink:href="#exchange-circle" x="520" y="253" />
         <text id="station-guide" class="station-label"
           x="510" y="220">Guide</text>
+        <use id="station-guide-rect" xlink:href="#station-rect" 
+          x="500" y="226" fill="#54c6e9" transform="rotate(45, 500 226)" />
+        <use xlink:href="#exchange-circle" x="435" y="172" />
+        <use xlink:href="#exchange-circle" x="425" y="172" />
+        <use xlink:href="#exchange-circle" x="415" y="172" />
+        <use xlink:href="#station-motivations" x="0" y="0" />
+        <use xlink:href="#exchange-circle" x="335" y="172" />
+        <use xlink:href="#port" x="235" y="168"/>
         <text id="station-contributions2" class="station-label"
-          x="160" y="100">
-          Contributions II
-        </text>
+          x="160" y="100">Contributions II</text>
+        <use xlink:href="#exchange-circle" x="200" y="123" />
       </g> <!-- END INTRODUCTION LABELS -->
 
       <!-- INSPIRATIONS LABELS -->
       <g id="inspirations-2-labels-group" class="station-label-group">
         <text id="station-motivations" class="station-label"
-          x="452.62411" y="358.06851">
-          Motivation
-        </text>
+          x="320" y="215">Motivation</text>
+        <use xlink:href="#exchange-circle" x="335" y="203"/>
         <g id="station-yossarian-group">
           <text id="station-yossarian" class="station-label"
-            x=343 y=462>
-            Yossarian
-          </text>
-          <rect id="station-yossarian-rect"
-            fill=#aa87de
-            width="1.343691" height="2.2674308"
-            x=460 y=-340
-            transform="rotate(90)" />
+            x="205" y="317">Yossarian</text>
+          <use xlink:href="#station-rect" x="200" y="315" fill="#aa87de"
+            transform="rotate(90, 200 315)"/>
         </g>
         <text id="station-syzygy-surfer" class="station-label"
-          x=344 y=468>
-          <tspan x=344 dy="1em">Syzygy</tspan>
-          <tspan x=344 dy="1em">Surfer</tspan>
+          x="206" y="325">
+          <tspan x="206" dy="1em">Syzygy</tspan>
+          <tspan x="206" dy="1em">Surfer</tspan>
         </text>
+        <use xlink:href="#exchange-circle" x="195" y="335" />
+        <use xlink:href="#exchange-circle" x="195" y="350" />
+        <use xlink:href="#station-coder-culture" x="0" y="0" />
+        <use xlink:href="#exchange-circle" x="195" y="362" />
+        <use xlink:href="#station-corpora" x="0" y="0" />
         <text id="station-faustroll" class="station-label"
-          x="274.43518" y="538.57355">
-          Faustroll
-        </text>
+          x="132" y="402">Faustroll</text>
+        <use xlink:href="#exchange-circle" x="195" y="400" />
         <text id="station-borges" class="station-label"
-          x="341.64795" y="553.93011">
-          Borges
-        </text>
+          x="205" y="418">Borges</text>
+        <use xlink:href="#exchange-circle" x="195" y="416" />
         <text id="station-queneau" class="station-label"
-          x="342.49722" y="566.34625">
-          Queneau
-        </text>
+          x="205" y="432">Queneau</text>
+        <use xlink:href="#exchange-circle" x="195" y="430" />
         <text id="station-library-babel" class="station-label"
-          x=342 y=588>
-          <tspan x=342 dy="1em">Library of </tspan>
-          <tspan x=342 dy="1em">Babel</tspan>
+          x="205" y="452">
+          <tspan x="205" dy="1em">Library of </tspan>
+          <tspan x="205" dy="1em">Babel</tspan>
         </text>
+        <use xlink:href="#exchange-circle" x="195" y="460" />
+        <use xlink:href="#exchange-circle" x="195" y="483" />
       </g>
       <!-- END INSPIRATIONS LABELS -->
 
       <!-- METHODOLOGY LABELS -->
       <g id="methodology-3-labels-group" class="station-label-group">
+        <use xlink:href="#station-tmpr" x="0" y="0"/>
+        <use xlink:href="#exchange-circle" x="438" y="24"/>
         <g id="station-transdisciplinary-group">
           <text id="station-transdisciplinary" class="station-label"
-            x="540.55145" y="229.24013">
-            Transdisciplinarity
-          </text>
-          <rect id="station-transdisciplinary-rect"
-            fill=#0055d4
-            width="1.343691" height="2.2674308"
-            x="542.56274" y="-210"
-            transform="rotate(45)" />
+            x="405" y="90">Transdisciplinarity</text>
+          <use xlink:href="#station-rect" x="393" y="95" fill="#0055d4"
+            transform="rotate(45, 393 95)"/>
         </g>
+        <use xlink:href="#station-disciplines" x="0" y="0"/>
+        <use xlink:href="#exchange-circle" x="416" y="125"/>
+        <use xlink:href="#station-unite-conquer" x="0" y="0"/>
+        <use xlink:href="#exchange-circle" x="425" y="135"/>
         <g id="station-nicolescu-group">
           <text id="station-nicolescu" class="station-label"
-            x=514 y=288>
-            Nicolescu
-          </text>
-          <rect id="station-nicolescu-rect"
-            fill=#0055d4
-            width="1.343691" height="2.2674308"
-            x=285 y=-562
-            transform="rotate(90)" />
+            x="370" y="152">Nicolescu</text>
+          <use xlink:href="#station-rect" x="422" y="150" fill="#0055d4"
+            transform="rotate(90,422,150)"/>
         </g>
+        <use xlink:href="#exchange-circle" x="425" y="172" />
+        <use xlink:href="#exchange-circle" x="425" y="182" />
+        <use xlink:href="#station-digital-humanities" x="0" y="0"/>
+        <use xlink:href="#exchange-circle" x="425" y="270"/>
         <text id="station-arts-humanities" class="station-label"
-          x=575 y=415>
-          <tspan x=575 dy="1em">Arts &amp;</tspan>
-          <tspan x=575 dy="1em">Humanities</tspan>
+          x="440" y="280">
+          <tspan x="440" dy="1em">Arts &amp;</tspan>
+          <tspan x="440" dy="1em">Humanities</tspan>
         </text>
+        <use xlink:href="#exchange-circle" x="425" y="286"/>
+        <use xlink:href="#port" x="422" y="300"/>
         <g id="station-intradisciplinary-group">
           <text id="station-intradisciplinary" class="station-label"
-            x="547.17572" y="455.10071" text-anchor=end>
-            Intradisciplinary
-          </text>
-          <rect id="station-intradisciplinary-rect"
-            fill=#0055d4
-            width="1.343691" height="2.2674308"
-            x="451.72946" y="-562.07294"
-            transform="rotate(90)" />
+            x="405" y="318" text-anchor="end">
+            Intradisciplinary</text>
+          <use xlink:href="#station-rect" x="422" y="316" fill="#0055d4"
+            transform="rotate(90,422,316)"/>
         </g>
         <text id="station-subjectivity" class="station-label"
-          x="544.38232" y="472.27673" text-anchor=end>
-          Subjectivity
-        </text>
+          x="358" y="335">Subjectivity</text>
+        <use xlink:href="#exchange-circle" x="330" y="343"/>
         <text id="station-objctivity" class="station-label"
-          x="492.65515" y="471.81723" text-anchor=end>
-          Objectivity
-        </text>
-        <g id="station-yossarian-group">
-          <text id="station-yossarian" class="station-label"
-            x=575 y=560>
-            <tspan x=575 dy="1em">Theory &amp;</tspan>
-            <tspan x=575 dy="1em">Practice</tspan>
+          x="310" y="335">Objectivity</text>
+        <use xlink:href="#exchange-circle" x="375" y="343"/>
+        <use xlink:href="#exchange-circle" x="425" y="362"/>
+        <g id="station-theory-practice-group">
+          <text id="station-theory-practice" class="station-label"
+            x="440" y="420">
+            <tspan x="440" dy="1em">Theory &amp;</tspan>
+            <tspan x="440" dy="1em">Practice</tspan>
           </text>
-          <rect id="station-yossarian-rect"
-            fill=#0055d4
-            width="1.343691" height="2.2674308"
-            x=572 y=-570
-            transform="rotate(90)" />
+          <use xlink:href="#station-rect" x="430" y="425" fill="#0055d4"
+            transform="rotate(90,430,425)"/>
         </g>
+        <use xlink:href="#station-computer-science" x="0" y="0"/>
+        <use xlink:href="#exchange-circle" x="425" y="472"/>
       </g>
       <!-- END METHODOLOGY LABELS -->
 
@@ -5143,9 +5215,9 @@ viewBox="130 130 750 550" -->
       <!-- TECHNOLOGY LABELS -->
       <g id="technology-6-labels-group" class="station-label-group">
         <text id="station-unite-conquer" class="station-label"
-          x=592 y=230>
-          <tspan x=592 dy="1em">Unite &amp; Conquer</tspan>
-          <tspan x=592 dy="1em">(Yang)</tspan>
+          x="460" y="105">
+          <tspan x="460" dy="1em">Unite &amp; Conquer</tspan>
+          <tspan x="460" dy="1em">(Yang)</tspan>
         </text>
         <g id="station-information-retrieval-group">
           <text id="station-information-retrieval" class="station-label"
@@ -5194,9 +5266,9 @@ viewBox="130 130 750 550" -->
             transform="rotate(135)" />
         </g>
         <text id="station-computer-science" class="station-label"
-          x=572 y=590>
-          <tspan x=572 dy="1em">Computer</tspan>
-          <tspan x=572 dy="1em">Science</tspan>
+          x="440" y="450">
+          <tspan x="440" dy="1em">Computer</tspan>
+          <tspan x="440" dy="1em">Science</tspan>
         </text>
         <g id="station-linguistics-group">
           <text id="station-linguistics" class="station-label"
@@ -5226,9 +5298,9 @@ viewBox="130 130 750 550" -->
             transform="rotate(-135)" />
         </g>
         <text id="station-coder-culture" class="station-label"
-          x="307.08688" y=478 text-anchor=end>
-          <tspan x=307 dy="1em">Coder</tspan>
-          <tspan x=307 dy="1em">Culture</tspan>
+          x="165" y="340" text-anchor="end">
+          <tspan x="165" dy="1em">Coder</tspan>
+          <tspan x="165" dy="1em">Culture</tspan>
         </text>
         <g id="station-ngrams-group">
           <text id="station-ngrams" class="station-label"
@@ -5357,9 +5429,7 @@ viewBox="130 130 750 550" -->
             transform="rotate(-45)" />
         </g>
         <text id="station-tmpr" class="station-label"
-          x="589.15759" y="166.98703">
-          TMPR
-        </text>
+          x="450" y="25">TMPR</text>
       </g>
       <!-- END EVALUATION LABELS -->
 
@@ -5380,9 +5450,7 @@ viewBox="130 130 750 550" -->
             x=410 y=177 />
         </g>
         <text id="station-disciplines" class="station-label"
-          x=493 y=270>
-          Disciplines
-        </text>
+          x="355" y="140">Disciplines</text>
         <text id="station-pataphysics-creativity" class="station-label"
           x=582 y=334>
           <tspan x=582 dy="1em">Pataphysics &amp;</tspan>
@@ -5401,15 +5469,16 @@ viewBox="130 130 750 550" -->
             transform="rotate(-90)" />
         </g>
         <text id="station-digital-humanities" class="station-label"
-          x=546 y=400 text-anchor=end>
-          <tspan x=546 dy="1em">Digital</tspan>
-          <tspan x=546 dy="1em">Humanities</tspan>
+          x="405" y="260" text-anchor=end>
+          <tspan x="405" dy="1em">Digital</tspan>
+          <tspan x="405" dy="1em">Humanities</tspan>
         </text>
       </g>
       <!-- END FOUNDATIONS LABELS -->
 
       <!-- INTERPRETATION LABELS -->
       <g id="interpretation-9-labels-group" class="station-label-group">
+        <use xlink:href="#station-contributions2" x="0" y="0" />
         <text id="station-framework" class="station-label"
           x=243 y=265>
           Framework
@@ -5719,9 +5788,7 @@ viewBox="130 130 750 550" -->
             x=381 y=504.5 />
         </g>
         <text id="station-corpora" class="station-label"
-          x="338.99124" y="512.03442">
-          Corpora
-        </text>
+          x="205" y="375">Corpora</text>
         <text id="station-mimicry" class="station-label"
           x=222 y=494>
           Mimicry
@@ -5901,6 +5968,19 @@ viewBox="130 130 750 550" -->
     </g> <!-- END FOREGROUND LABELS -->
 
 
+    <!-- EXCHANGE CONNECTORS -->
+    <g id="exchange-connectors">
+  
+      <g class="connect-1 connect-2" id="motivations-connector">
+        <rect x="333.5" y="175.5" width="3" height="24" fill="black"/>
+        <rect x="334.5" y="174.5" width="1" height="26" fill="white"/>
+      </g>
+
+
+
+    </g> <!-- END EXCHANGE CONNECTORS -->
+
+
 
 
 
@@ -5911,7 +5991,7 @@ viewBox="130 130 750 550" -->
 
 
 
-  <rect id="train" fill="black" x="5" y="5" width="20" height="10"/>
+  <!-- <rect id="train" fill="black" x="5" y="5" width="20" height="10"/>
   <animateMotion
     xlink:href="#train"
     begin="click"
@@ -5923,8 +6003,7 @@ viewBox="130 130 750 550" -->
     rotate="auto"
     path="M 64 62, 338 62, 415 138, 415 352.5, 198 352.5, 64 220, 64 62"
     >
-    <!-- <mpath xlink:href="#trainpath" /> -->
-  </animateMotion>
+  </animateMotion> -->
 
 
 </svg>

@@ -34,6 +34,7 @@ let check14 = document.getElementById("show-14");
 let linesOnly = document.querySelectorAll("[id$='line-group']");
 // console.log(linesOnly);
 let labelsOnly = document.querySelectorAll("[id$='labels-group']");
+let connectors = document.getElementById("exchange-connectors");
 // console.log(labelsOnly);
 let toggleIL = [false,false,false,false,false,false,false,false,false,false,false,false,false,false];
 for (let i=1; i<=14; i++) {
@@ -44,14 +45,26 @@ for (let i=1; i<=14; i++) {
     let labelsID = labelsOnly[num].id;
     let line = document.getElementById(lineID);
     let labels = document.getElementById(labelsID);
+    let consID = `connect-${i}`;
+    console.log(consID);
+    let connections = document.getElementsByClassName(consID);
+    console.log(connections, connections.length);
     // console.log(line, labels);
     if (toggleIL[num]) { // currently hidden
       line.classList.remove("hide");
       labels.classList.remove("hide");
+      for (c=0; c<connections.length; c++){
+        console.log(`show c: ${connections[c]}`);
+        connections[c].classList.remove("hide");
+      }
       toggleIL[num] = false;
     } else { // currently shown
       line.classList.add("hide");
       labels.classList.add("hide");
+      for (c=0; c<connections.length; c++){
+        console.log(`hide c: ${connections[c]}`);
+        connections[c].classList.add("hide");
+      }
       toggleIL[num] = true;
     }
   });
@@ -76,6 +89,7 @@ for (let i=1; i<=14; i++) {
     // console.log(`remove dim from ${lineID} and ${labelsID}`);
     line.classList.remove("dim");
     labels.classList.remove("dim");
+    connectors.classList.add("dim");
   });
   line.addEventListener("mouseout", function(){
     // console.log(`mouseout ${lineID} ${num}`);
@@ -84,6 +98,7 @@ for (let i=1; i<=14; i++) {
       // console.log(`${k} remove dim to ${linesOnly[numk].id}`);
       linesOnly[numk].classList.remove("dim");
       labelsOnly[numk].classList.remove("dim");
+      connectors.classList.remove("dim");
     }
   });
 }
