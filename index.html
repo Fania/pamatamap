@@ -147,18 +147,18 @@ viewBox="130 130 750 550" -->
       <clipPath id="exShort">
         <rect x="0" y="0" width="3.5" height="3" />
       </clipPath>
-      <use xlink:href="#exchange-circle" x="5" y="5" />
-      <use xlink:href="#exchange-circle" x="15" y="5" />
-      <use xlink:href="#extest" x="8.25" y="3.5" clip-path="url(#exShort)"/>
+      <use href="#exchange-circle" x="5" y="5" />
+      <use href="#exchange-circle" x="15" y="5" />
+      <use href="#extest" x="8.25" y="3.5" clip-path="url(#exShort)"/>
     </g> -->
 
     <!-- <g id="testLong">
       <clipPath id="exLong">
         <rect x="0" y="0" width="3.5" height="3" />
       </clipPath>
-      <use xlink:href="#exchange-circle" x="5" y="5" />
-      <use xlink:href="#exchange-circle" x="15" y="5" />
-      <use xlink:href="#extest" x="8.25" y="3.5" clip-path="url(#exLong)"/>
+      <use href="#exchange-circle" x="5" y="5" />
+      <use href="#exchange-circle" x="15" y="5" />
+      <use href="#extest" x="8.25" y="3.5" clip-path="url(#exLong)"/>
     </g> -->
 
     <rect id="port" class="appendix-port"
@@ -169,12 +169,12 @@ viewBox="130 130 750 550" -->
 
   <!-- PLAYGROUND -->
 
-  <!-- <use xlink:href="#port" x="5" y="5"/> -->
+  <!-- <use href="#port" x="5" y="5"/> -->
 
 
 
-  <!-- <use xlink:href="#exchange-circle" x="5" y="5" />
-  <use xlink:href="#exchange-circle" x="15" y="5" />
+  <!-- <use href="#exchange-circle" x="5" y="5" />
+  <use href="#exchange-circle" x="15" y="5" />
   <line x1="8.25" y1="4" x2="12" y2="4" stroke="black" />
   <line x1="8.25" y1="5" x2="12" y2="5" stroke="white" />
   <line x1="8.25" y1="6" x2="12" y2="6" stroke="black" />
@@ -185,12 +185,12 @@ viewBox="130 130 750 550" -->
 
 
   <!-- <clipPath id="exShort"><rect x="0" y="0" width="5" height="3" /></clipPath>
-  <use xlink:href="#exchange-circle" x="5" y="5" />
-  <use xlink:href="#exchange-circle" x="15" y="5" />
-  <use xlink:href="#extest" x="10" y="20" clip-path="url(#exShort)"/> -->
+  <use href="#exchange-circle" x="5" y="5" />
+  <use href="#exchange-circle" x="15" y="5" />
+  <use href="#extest" x="10" y="20" clip-path="url(#exShort)"/> -->
 
 
-  <!-- <use xlink:href="#exchange-connectors" x="10" y="80" /> -->
+  <!-- <use href="#exchange-connectors" x="10" y="80" /> -->
 
   
 
@@ -286,7 +286,7 @@ viewBox="130 130 750 550" -->
         
 
       <!-- TOPIC CLUSTERS -->
-      <g id="clusters" class="hide">
+      <g id="clusters" >
 
         <!-- INSPIRATIONS -->
         <rect id="inspirations-cluster" class="cluster-rect"
@@ -312,11 +312,9 @@ viewBox="130 130 750 550" -->
 
         <!-- BODEN -->
         <rect id="boden-cluster" class="cluster-rect"
-          width="89.272385" height="59.216579"
-          x="152.10748" y="341.37161" />
+          width="90" height="60" x="15" y="200" />
         <text id="boden-cluster-label" class="cluster-text"
-          x="340.93271" y="-243.2655"
-          transform="rotate(90)">
+          x="107" y="202" transform="rotate(90,107,202)">
           BODEN
         </text>
 
@@ -372,12 +370,12 @@ viewBox="130 130 750 550" -->
       <g id="appendices" class="hide">
 
         <!-- APPENDIX A -->
-        <a xlink:href= "https://dr.physics.wtf/html/random.html" xlink:title="Appendix A: Random" class="highlight-river">
+        <a href= "https://dr.physics.wtf/html/random.html" xlink:title="Appendix A: Random" class="highlight-river">
           <path id="appendix-A" class="appendix-river"
             stroke=#aaaaff
             d="m 253.79404,664.79624 c -1.02014,-19.80583 -11.45647,-39.06523 -25.15246,-52.79452 -18.5856,-18.2106 -52.84837,-26.24717 -53.19111,-56.95774 -7.82732,-26.11287 4.24334,-52.06321 19.05405,-73.20837 20.49853,-12.48643 39.47647,-27.01791 60.35972,-38.90392 16.02755,-18.15623 29.12483,-38.82766 48.48451,-53.8048 12.18293,-23.05564 36.59452,-29.07263 51.48148,-4.67662 14.03615,20.705 37.54251,40.65164 49.68703,62.54911 10.10155,25.03149 27.35856,46.28247 53.30316,54.6308 23.02232,9.32293 53.34728,-7.27898 68.26697,-24.64528 24.71755,-10.00872 37.14482,-27.60801 40.98446,-55.67786 9.72626,-34.04588 50.36242,-48.69105 57.07473,-84.37136 14.99915,-34.35371 13.85826,-72.70135 8.18722,-108.98737 -3.08732,-25.79249 -0.53702,-51.79819 -1.09461,-77.68012" />
           <text id="appendix-A-text" class="appendix-text">
-            <textPath id="appendix-A-text-textpath" xlink:href="#appendix-A-text-path">
+            <textPath id="appendix-A-text-textpath" href="#appendix-A-text-path">
               Appendix A
             </textPath>
             <path id="appendix-A-text-path"
@@ -388,12 +386,12 @@ viewBox="130 130 750 550" -->
         <!-- END APPENDIX A -->
         
         <!-- APPENDIX B -->
-        <a xlink:href= "https://dr.physics.wtf/html/code.html" xlink:title="Appendix B: Code" class="highlight-river">
+        <a href= "https://dr.physics.wtf/html/code.html" xlink:title="Appendix B: Code" class="highlight-river">
           <path id="appendix-B" class="appendix-river"
             stroke="#87cdde"
             d="m 150.79262,445.62436 c 33.88296,2.61942 46.05101,41.45098 72.79046,56.93994 25.12206,9.39352 43.12698,29.20106 60.55814,49.232 32.61612,42.79124 85.8983,58.43067 131.10584,83.53077 25.50164,13.84612 57.09378,33.57217 86.09159,17.55064 33.81877,-6.0085 39.46959,-38.55546 54.24265,-63.5173 11.79261,-25.29598 31.18921,-44.87333 47.54976,-66.99033 27.78922,-50.2725 67.29843,-94.60173 84.23938,-150.48645 9.71871,-24.31821 19.15871,-48.62709 25.52228,-74.09792 10.21403,-31.54067 25.72151,-62.72725 25.08711,-96.53532 10.35465,-20.6526 4.18841,-37.58585 3.15641,-51.21398" />
           <text id="appendix-B-text" class="appendix-text">
-            <textPath id="appendix-B-text-textpath" xlink:href="#appendix-B-text-path">
+            <textPath id="appendix-B-text-textpath" href="#appendix-B-text-path">
               Appendix B
             </textPath>
             <path id="appendix-B-text-path"
@@ -404,7 +402,7 @@ viewBox="130 130 750 550" -->
         <!-- END APPENDIX B -->
         
         <!-- APPENDIX C -->
-        <a xlink:href= "https://dr.physics.wtf/html/wordnet.html" xlink:title="Appendix C: WordNet" class="highlight-lake">
+        <a href= "https://dr.physics.wtf/html/wordnet.html" xlink:title="Appendix C: WordNet" class="highlight-lake">
           <path id="appendix-C" class="appendix-lake"
             stroke=#80b3ff fill=#80b3ff
             d="m 496.97745,579.59449 c -7.29368,-2.7059 -15.46571,-3.67315 -23.26026,-2.45927 -12.13682,3.0342 -21.58423,13.21199 -22.22178,24.3819 -0.33344,8.01387 4.92599,15.1514 10.38963,21.16043 4.69624,4.97275 11.53558,7.85297 18.58635,9.22842 6.7603,1.54598 13.9825,2.70184 20.90837,1.42471 6.43474,-1.94707 9.46691,-7.85116 12.54952,-12.71872 2.62592,-5.16539 5.32606,-10.50451 5.41107,-16.26799 0.54946,-6.14866 -0.58174,-12.34675 -1.98405,-18.34737 -1.42314,-3.16294 -4.71077,-6.00994 -8.85925,-5.5502 -3.57718,-0.34188 -7.00054,-1.28016 -10.55794,-1.74385 -0.46657,0.1817 -0.42992,0.75064 -0.96166,0.89194 z" />
@@ -416,7 +414,7 @@ viewBox="130 130 750 550" -->
         </a>
 
         <!-- APPENDIX D -->
-        <a xlink:href= "https://dr.physics.wtf/html/git.html" xlink:title="Appendix D: GIT" class="highlight-river">
+        <a href= "https://dr.physics.wtf/html/git.html" xlink:title="Appendix D: GIT" class="highlight-river">
           <path id="appendix-D" class="appendix-river"
             stroke=#afc6e9
             d="m 854.71527,345.63982 c -29.86064,-1.09361 -61.84949,3.31403 -89.89228,-9.07255 -24.06742,-19.27429 -55.86409,-22.65659 -83.71469,-34.12154 -43.40932,-13.80636 -89.56526,-13.60739 -133.29703,-25.9929 -25.21999,-5.18386 -51.7406,-9.48196 -73.34268,-24.50466 -36.60042,-12.97079 -68.04305,-42.26213 -108.81845,-40.80507 -28.24963,-3.6436 -59.21664,-0.47844 -80.73313,20.1027 -31.39019,19.27281 -55.00775,47.82123 -76.14377,77.44771 -14.96936,19.99373 -35.06303,21.80076 -58.37706,20.59004" />
@@ -428,7 +426,7 @@ viewBox="130 130 750 550" -->
         </a>
 
         <!-- APPENDIX E -->
-        <a xlink:href= "https://dr.physics.wtf/html/pubs.html" xlink:title="Appendix E: Publications" class="highlight-lake">
+        <a href= "https://dr.physics.wtf/html/pubs.html" xlink:title="Appendix E: Publications" class="highlight-lake">
           <path id="appendix-E" class="appendix-lake"
             stroke=#87decd fill=#87decd
             d="m 428.20064,289.1445 c -2.21843,-3.42272 -18.34438,-10.03577 -23.51706,-8.77014 -5.87207,0.67686 -11.65611,-1.31875 -17.54304,-1.31704 -4.68662,-0.2388 -9.14327,-1.94461 -13.81522,-2.05789 -5.1172,0.71659 -7.97979,5.22272 -9.72399,9.03693 -2.82758,7.9927 -0.8811,16.44099 -1.51808,24.63726 -0.28523,3.24661 -0.16839,6.5956 1.23328,9.64082 0.55465,4.47056 2.49288,9.55861 7.74932,11.32706 6.75453,2.92512 14.49726,-0.30351 21.44322,1.83914 5.17494,0.34804 10.84045,0.41249 14.27592,-3.58102 4.96401,-4.16543 10.82264,-7.54542 14.81239,-12.53257 2.72838,-3.42261 5.29516,-7.06486 6.93586,-10.99199 1.70629,-4.47995 2.33141,-9.28212 1.74502,-13.98741 -1.17746,-4.0825 -5.3221,-7.01388 -9.45885,-8.7925 -2.80007,-1.06119 4.75261,2.05204 7.38123,5.54935 z" />
@@ -445,7 +443,7 @@ viewBox="130 130 750 550" -->
 
         <!-- INTRODUCTION LINE -->
         <g id="introduction-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/introduction.html" xlink:title="Chapter 1: Introduction">
+          <a href= "https://dr.physics.wtf/html/introduction.html" xlink:title="Chapter 1: Introduction">
             <polyline id="introduction-line" class="line" 
               stroke="#54c6e9"
               points="152 123, 208 123, 208 172, 439 172, 578 312, 720 312" />
@@ -460,7 +458,7 @@ viewBox="130 130 750 550" -->
 
         <!-- INSPIRATIONS LINE -->
         <g id="inspirations-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/inspirations.html" xlink:title="Chapter 2: Inspirations">
+          <a href= "https://dr.physics.wtf/html/inspirations.html" xlink:title="Chapter 2: Inspirations">
             <polyline id="inspirations-line" class="line" 
               stroke="#aa87de"
               points="195 528.5, 195 268, 260 203, 405 203" />
@@ -474,7 +472,7 @@ viewBox="130 130 750 550" -->
 
         <!-- METHODOLOGY LINE -->
         <g id="methodology-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/methodology.html" xlink:title="Chapter 3: Methodology">
+          <a href= "https://dr.physics.wtf/html/methodology.html" xlink:title="Chapter 3: Methodology">
             <polyline id="methodology-line-main" class="line" 
               stroke="#0055d4"
               points="456 6, 376 85.5, 425 133.5, 425 524.5" />
@@ -492,7 +490,7 @@ viewBox="130 130 750 550" -->
 
         <!-- PATAPHYSICS LINE -->
         <g id="pataphysics-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/pataphysics.html" xlink:title="Chapter 4: Pataphysics">
+          <a href= "https://dr.physics.wtf/html/pataphysics.html" xlink:title="Chapter 4: Pataphysics">
             <polyline id="pataphysics-line" class="line" 
               stroke="#ff80e5"
               points="185 528, 185 192, 432 192, 630 391, 720 391" />
@@ -506,7 +504,7 @@ viewBox="130 130 750 550" -->
 
         <!-- CREATIVITY LINE -->
         <g id="creativity-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/creativity.html" xlink:title="Chapter 5: Creativity">
+          <a href= "https://dr.physics.wtf/html/creativity.html" xlink:title="Chapter 5: Creativity">
             <polyline id="creativity-line"
               stroke="#ffcc00" fill="none" 
               stroke-width="6" stroke-linecap="square"
@@ -521,7 +519,7 @@ viewBox="130 130 750 550" -->
 
         <!-- TECHNOLOGY LINE -->
         <g id="technology-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/technology.html" xlink:title="Chapter 6: Technology">
+          <a href= "https://dr.physics.wtf/html/technology.html" xlink:title="Chapter 6: Technology">
             <polyline id="technology-line" class="line" 
               stroke="#ff6600"
               points="5 372.5, 186 372.5, 286.5 472.5, 501 472.5, 604.5 368.5, 604.5 272, 339.5 7" />
@@ -536,7 +534,7 @@ viewBox="130 130 750 550" -->
 
         <!-- EVALUATION LINE -->
         <g id="evaluation-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/evaluation.html" xlink:title="Chapter 7: Evaluation">
+          <a href= "https://dr.physics.wtf/html/evaluation.html" xlink:title="Chapter 7: Evaluation">
             <polyline id="evaluation-line" class="line" 
               stroke="#216778"
               points="5 281, 34.5 281, 34.5 52.5, 344 52.5, 369.5 78.5, 443 6" />
@@ -551,7 +549,7 @@ viewBox="130 130 750 550" -->
 
         <!-- FOUNDATIONS LINE -->
         <g id="foundations-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/foundation.html" xlink:title="Chapter 8: Foundations">
+          <a href= "https://dr.physics.wtf/html/foundation.html" xlink:title="Chapter 8: Foundations">
             <polyline id="foundations-line" class="line" 
               stroke="#aa0088"
               points="5 492.5, 54.5 492.5, 54.5 42.5, 348.5 42.5, 434.5 128.5, 434.5 275" />
@@ -566,7 +564,7 @@ viewBox="130 130 750 550" -->
 
         <!-- INTERPRETATION LINE -->
         <g id="interpretation-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/interpretation.html" xlink:title="Chapter 9: Interpretation">
+          <a href= "https://dr.physics.wtf/html/interpretation.html" xlink:title="Chapter 9: Interpretation">
             <polyline id="interpretation-line" class="line" 
               stroke="#6600ff"
               points="176.5 114.5, 74.5 216.6, 74.5 442.5, 342.5 442.5, 435 350" />
@@ -580,7 +578,7 @@ viewBox="130 130 750 550" -->
 
         <!-- IMPLEMENTATION LINE -->
         <g id="implementation-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/implementation.html" xlink:title="Chapter 10: Implementation">
+          <a href= "https://dr.physics.wtf/html/implementation.html" xlink:title="Chapter 10: Implementation">
             <polyline id="implementation-line" class="line" 
               stroke="#008066"
               points="174 303, 174 483, 505 483, 614 374, 614 213.5, 720 108" />
@@ -595,7 +593,7 @@ viewBox="130 130 750 550" -->
 
         <!-- APPLICATIONS LINE -->
         <g id="applications-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/applications.html" xlink:title="Chapter 11: Applications">
+          <a href= "https://dr.physics.wtf/html/applications.html" xlink:title="Chapter 11: Applications">
             <polyline id="applications-line" class="line" 
               stroke="#292a78"
               points="86 220, 193 113.5, 220 113.5, 269.5 161.5, 444 161.5, 583.5 301.5, 583.5 374, 720 510" />
@@ -610,7 +608,7 @@ viewBox="130 130 750 550" -->
 
         <!-- PATANALYSIS LINE -->
         <g id="patanalysis-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/analysis.html" xlink:title="Chapter 12: Patanalysis">
+          <a href= "https://dr.physics.wtf/html/analysis.html" xlink:title="Chapter 12: Patanalysis">
             <polyline id="patanalysis-line-main" class="line" 
               stroke="#ff0053"
               points="516.5 522, 516.5 362, 593 362, 593 32, 43.5 32, 43.5 362, 516 362" />
@@ -624,7 +622,7 @@ viewBox="130 130 750 550" -->
 
         <!-- ASPIRATIONS LINE -->
         <g id="aspirations-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/aspirations.html" xlink:title="Chapter 13: Aspirations">
+          <a href= "https://dr.physics.wtf/html/aspirations.html" xlink:title="Chapter 13: Aspirations">
             <polyline id="aspirations-line-main" class="line" 
               stroke="#88aa00"
               points="180 141, 64.5 257, 64.5 492.5, 510.5 492.5, 624.5 378.5, 624.5 216.5, 720 120.5" />
@@ -642,7 +640,7 @@ viewBox="130 130 750 550" -->
 
         <!-- OUTRODUCTION LINE -->
         <g id="outroduction-line-group" class="highlight-group">
-          <a xlink:href= "https://dr.physics.wtf/html/observations.html" xlink:title="Chapter 14: Outroduction">
+          <a href= "https://dr.physics.wtf/html/observations.html" xlink:title="Chapter 14: Outroduction">
             <polyline id="outroduction-line-main" class="line" 
               stroke="#0080b3"
               points="83 5, 83 132, 196 132, 196 182, 436 182, 576 322, 720 322" />
@@ -4956,132 +4954,134 @@ viewBox="130 130 750 550" -->
       <g id="introduction-1-labels-group" class="station-label-group">
         <text id="station-questions" class="station-label"
           x="630" y="305">Questions</text>
-        <use xlink:href="#exchange-circle" x="645" y="312" />
-        <use xlink:href="#exchange-circle" x="624.3" y="312" />
-        <use xlink:href="#exchange-circle" x="614" y="312" />
-        <use xlink:href="#exchange-circle" x="604.5" y="312" />
-        <use xlink:href="#exchange-circle" x="593" y="312" />
+        <use href="#exchange-circle" x="645" y="312" />
+        <use href="#exchange-circle" x="624.3" y="312" />
+        <use href="#exchange-circle" x="614" y="312" />
+        <use href="#exchange-circle" x="604.5" y="312" />
+        <use href="#exchange-circle" x="593" y="312" />
         <text id="station-contributions1" class="station-label"
           x="510" y="310">
           <tspan x="510" dy="1em">Contributions</tspan>
           <tspan x="550" dy="1em">I</tspan>
         </text>
-        <use xlink:href="#exchange-circle" x="570" y="304" />
+        <use href="#exchange-circle" x="570" y="304" />
         <text id="station-publications" class="station-label"
           x="548" y="254">Publications</text>
-        <use xlink:href="#exchange-circle" x="536.5" y="270" />
-        <use xlink:href="#exchange-circle" x="520" y="253" />
+        <use href="#exchange-circle" x="536.5" y="270" />
+        <use href="#exchange-circle" x="520" y="253" />
         <text id="station-guide" class="station-label"
           x="510" y="220">Guide</text>
-        <use id="station-guide-rect" xlink:href="#station-rect" 
+        <use id="station-guide-rect" href="#station-rect" 
           x="500" y="226" fill="#54c6e9" transform="rotate(45, 500 226)" />
-        <use xlink:href="#exchange-circle" x="435" y="172" />
-        <use xlink:href="#exchange-circle" x="425" y="172" />
-        <use xlink:href="#exchange-circle" x="415" y="172" />
-        <use xlink:href="#station-motivations" x="0" y="0" />
-        <use xlink:href="#exchange-circle" x="335" y="172" />
-        <use xlink:href="#port" x="235" y="168"/>
+        <use href="#exchange-circle" x="435" y="172" />
+        <use href="#exchange-circle" x="425" y="172" />
+        <use href="#exchange-circle" x="415" y="172" />
+        <use href="#station-motivations" x="0" y="0" />
+        <use href="#exchange-circle" x="335" y="172" />
+        <use href="#port" x="235" y="168"/>
         <text id="station-contributions2" class="station-label"
           x="160" y="100">Contributions II</text>
-        <use xlink:href="#exchange-circle" x="200" y="123" />
+        <use href="#exchange-circle" x="200" y="123" />
       </g> <!-- END INTRODUCTION LABELS -->
 
       <!-- INSPIRATIONS LABELS -->
       <g id="inspirations-2-labels-group" class="station-label-group">
         <text id="station-motivations" class="station-label"
           x="320" y="215">Motivation</text>
-        <use xlink:href="#exchange-circle" x="335" y="203"/>
+        <use href="#exchange-circle" x="335" y="203"/>
+        <use href="#station-oulipo" x="0" y="0"/>
+        <use href="#exchange-circle" x="195" y="310"/>
         <g id="station-yossarian-group">
           <text id="station-yossarian" class="station-label"
-            x="205" y="317">Yossarian</text>
-          <use xlink:href="#station-rect" x="200" y="315" fill="#aa87de"
-            transform="rotate(90, 200 315)"/>
+            x="205" y="326">Yossarian</text>
+          <use href="#station-rect" x="200" y="324" fill="#aa87de"
+            transform="rotate(90, 200 324)"/>
         </g>
         <text id="station-syzygy-surfer" class="station-label"
-          x="206" y="325">
+          x="206" y="330">
           <tspan x="206" dy="1em">Syzygy</tspan>
           <tspan x="206" dy="1em">Surfer</tspan>
         </text>
-        <use xlink:href="#exchange-circle" x="195" y="335" />
-        <use xlink:href="#exchange-circle" x="195" y="350" />
-        <use xlink:href="#station-coder-culture" x="0" y="0" />
-        <use xlink:href="#exchange-circle" x="195" y="362" />
-        <use xlink:href="#station-corpora" x="0" y="0" />
+        <use href="#exchange-circle" x="195" y="340" />
+        <use href="#exchange-circle" x="195" y="352" />
+        <use href="#station-coder-culture" x="0" y="0" />
+        <use href="#exchange-circle" x="195" y="362" />
+        <use href="#station-corpora" x="0" y="0" />
         <text id="station-faustroll" class="station-label"
           x="132" y="402">Faustroll</text>
-        <use xlink:href="#exchange-circle" x="195" y="400" />
+        <use href="#exchange-circle" x="195" y="400" />
         <text id="station-borges" class="station-label"
           x="205" y="418">Borges</text>
-        <use xlink:href="#exchange-circle" x="195" y="416" />
+        <use href="#exchange-circle" x="195" y="416" />
         <text id="station-queneau" class="station-label"
           x="205" y="432">Queneau</text>
-        <use xlink:href="#exchange-circle" x="195" y="430" />
+        <use href="#exchange-circle" x="195" y="430" />
         <text id="station-library-babel" class="station-label"
           x="205" y="452">
           <tspan x="205" dy="1em">Library of </tspan>
           <tspan x="205" dy="1em">Babel</tspan>
         </text>
-        <use xlink:href="#exchange-circle" x="195" y="460" />
-        <use xlink:href="#exchange-circle" x="195" y="483" />
+        <use href="#exchange-circle" x="195" y="460" />
+        <use href="#exchange-circle" x="195" y="483" />
       </g>
       <!-- END INSPIRATIONS LABELS -->
 
       <!-- METHODOLOGY LABELS -->
       <g id="methodology-3-labels-group" class="station-label-group">
-        <use xlink:href="#station-tmpr" x="0" y="0"/>
-        <use xlink:href="#exchange-circle" x="438" y="24"/>
+        <use href="#station-tmpr" x="0" y="0"/>
+        <use href="#exchange-circle" x="438" y="24"/>
         <g id="station-transdisciplinary-group">
           <text id="station-transdisciplinary" class="station-label"
             x="405" y="90">Transdisciplinarity</text>
-          <use xlink:href="#station-rect" x="393" y="95" fill="#0055d4"
+          <use href="#station-rect" x="393" y="95" fill="#0055d4"
             transform="rotate(45, 393 95)"/>
         </g>
-        <use xlink:href="#station-disciplines" x="0" y="0"/>
-        <use xlink:href="#exchange-circle" x="416" y="125"/>
-        <use xlink:href="#station-unite-conquer" x="0" y="0"/>
-        <use xlink:href="#exchange-circle" x="425" y="135"/>
+        <use href="#station-disciplines" x="0" y="0"/>
+        <use href="#exchange-circle" x="416" y="125"/>
+        <use href="#station-unite-conquer" x="0" y="0"/>
+        <use href="#exchange-circle" x="425" y="135"/>
         <g id="station-nicolescu-group">
           <text id="station-nicolescu" class="station-label"
             x="370" y="152">Nicolescu</text>
-          <use xlink:href="#station-rect" x="422" y="150" fill="#0055d4"
+          <use href="#station-rect" x="422" y="150" fill="#0055d4"
             transform="rotate(90,422,150)"/>
         </g>
-        <use xlink:href="#exchange-circle" x="425" y="172" />
-        <use xlink:href="#exchange-circle" x="425" y="182" />
-        <use xlink:href="#station-digital-humanities" x="0" y="0"/>
-        <use xlink:href="#exchange-circle" x="425" y="270"/>
+        <use href="#exchange-circle" x="425" y="172" />
+        <use href="#exchange-circle" x="425" y="182" />
+        <use href="#station-digital-humanities" x="0" y="0"/>
+        <use href="#exchange-circle" x="425" y="270"/>
         <text id="station-arts-humanities" class="station-label"
           x="440" y="280">
           <tspan x="440" dy="1em">Arts &amp;</tspan>
           <tspan x="440" dy="1em">Humanities</tspan>
         </text>
-        <use xlink:href="#exchange-circle" x="425" y="286"/>
-        <use xlink:href="#port" x="422" y="300"/>
+        <use href="#exchange-circle" x="425" y="286"/>
+        <use href="#port" x="422" y="300"/>
         <g id="station-intradisciplinary-group">
           <text id="station-intradisciplinary" class="station-label"
             x="405" y="318" text-anchor="end">
             Intradisciplinary</text>
-          <use xlink:href="#station-rect" x="422" y="316" fill="#0055d4"
+          <use href="#station-rect" x="422" y="316" fill="#0055d4"
             transform="rotate(90,422,316)"/>
         </g>
         <text id="station-subjectivity" class="station-label"
           x="358" y="335">Subjectivity</text>
-        <use xlink:href="#exchange-circle" x="330" y="343"/>
-        <text id="station-objctivity" class="station-label"
+        <use href="#exchange-circle" x="330" y="343"/>
+        <text id="station-objectivity" class="station-label"
           x="310" y="335">Objectivity</text>
-        <use xlink:href="#exchange-circle" x="375" y="343"/>
-        <use xlink:href="#exchange-circle" x="425" y="362"/>
+        <use href="#exchange-circle" x="375" y="343"/>
+        <use href="#exchange-circle" x="425" y="362"/>
         <g id="station-theory-practice-group">
           <text id="station-theory-practice" class="station-label"
             x="440" y="420">
             <tspan x="440" dy="1em">Theory &amp;</tspan>
             <tspan x="440" dy="1em">Practice</tspan>
           </text>
-          <use xlink:href="#station-rect" x="430" y="425" fill="#0055d4"
+          <use href="#station-rect" x="430" y="425" fill="#0055d4"
             transform="rotate(90,430,425)"/>
         </g>
-        <use xlink:href="#station-computer-science" x="0" y="0"/>
-        <use xlink:href="#exchange-circle" x="425" y="472"/>
+        <use href="#station-computer-science" x="0" y="0"/>
+        <use href="#exchange-circle" x="425" y="472"/>
       </g>
       <!-- END METHODOLOGY LABELS -->
 
@@ -5089,126 +5089,137 @@ viewBox="130 130 750 550" -->
       <g id="pataphysics-4-labels-group" class="station-label-group">
         <g id="station-boek-group">
           <text id="station-boek" class="station-label"
-            x=301 y=656>
-            Bök
-          </text>
-          <rect id="station-boek-rect"
-            fill=#ff80e5
-            width="1.343691" height="2.2674308"
-            x=651 y=-321
-            transform="rotate(90)" />
+            x="174" y="513" text-anchor="end">
+            Bök</text>
+          <use href="#station-rect" x="182" y="510" fill="#ff80e5"
+            transform="rotate(90,182,510)"/>
         </g>
+        <use href="#exchange-circle" x="185" y="493"/>
+        <use href="#exchange-circle" x="185" y="460" />
+        <use href="#station-library-babel" x="0" y="0" />
+        <use href="#exchange-circle" x="185" y="430" />
+        <use href="#station-queneau" x="0" y="0" />
+        <use href="#exchange-circle" x="185" y="416" />
+        <use href="#station-borges" x="0" y="0" />
+        <use href="#exchange-circle" x="185" y="400" />
+        <use href="#station-faustroll" x="0" y="0" />
+        <use href="#exchange-circle" x="185" y="340" />
+        <use href="#station-syzygy-surfer" x="0" y="0" />
         <text id="station-oulipo" class="station-label"
-          x="269.49237" y="461.84491">
-          Oulipo
-        </text>
+          x="120" y="318">Oulipo</text>
+        <use href="#exchange-circle" x="185" y="310"/>
         <g id="station-hugill-group">
           <text id="station-hugill" class="station-label"
-            x=293 y=421>
-            Hugill
-          </text>
-          <rect id="station-hugill-rect"
-            fill=#ff80e5
-            width="1.343691" height="2.2674308"
-            x=418 y=-321
-            transform="rotate(90)" />
+            x=153 y=293>Hugill</text>
+          <use href="#station-rect" x="182.5" y="290" fill="#ff80e5"
+            transform="rotate(90,182.5,290)"/>
         </g>
         <g id="station-brotchie-group">
           <text id="station-brotchie" class="station-label"
-            x=341 y=414>
-            Brotchie
-          </text>
-          <rect id="station-brotchie-rect"
-            fill=#ff80e5
-            width="1.343691" height="2.2674308"
-            x=408 y=-330
-            transform="rotate(90)" />
+            x=204 y=278>Brotchie</text>
+          <use href="#station-rect" x="190" y="274" fill="#ff80e5"
+            transform="rotate(90,190,274)"/>
         </g>
         <g id="station-ubu-group">
           <text id="station-ubu" class="station-label"
-            x=300 y=401>
-            Ubu
-          </text>
-          <rect id="station-ubu-rect"
-            fill=#ff80e5
-            width="1.343691" height="2.2674308"
-            x=396 y=-321
-            transform="rotate(90)" />
+            x=160 y=263>Ubu</text>
+          <use href="#station-rect" x="182.5" y="260" fill="#ff80e5"
+            transform="rotate(90,182.5,260)"/>
         </g>
+        <!-- <use href="#port" x="185" y="245"/> -->
         <g id="station-grand-gidouille-group">
           <text id="station-grand-gidouille" class="station-label"
-            x=315 y=340 text-anchor=end>
-            <tspan x=315 dy="1em">Grand</tspan>
-            <tspan x=315 dy="1em">Gidouille</tspan>
+            x=176 y=195 text-anchor=end>
+            <tspan x=176 dy="1em">Grand</tspan>
+            <tspan x=176 dy="1em">Gidouille</tspan>
           </text>
-          <rect id="station-grand-gidouille-rect"
-            fill=#ff80e5
-            width="1.343691" height="2.2674308"
-            x=348 y=-321
-            transform="rotate(90)" />
+          <use href="#station-rect" x="182.5" y="205" fill="#ff80e5"
+            transform="rotate(90,182.5,205)"/>
         </g>
         <g id="station-alfred-jarry-group">
           <text id="station-alfred-jarry" class="station-label"
-            x="334.76395" y="346.16098">
-            Alfred Jarry
-          </text>
-          <rect id="station-impact-rect"
-            fill=#ff80e5
-            width="1.3436904" height="2.2674296"
-            x="354.0878" y=335 />
+            x="196" y="205">Alfred Jarry</text>
+          <use href="#station-rect" x="210" y="194.5" fill="#ff80e5"/>
         </g>
+        <use href="#exchange-circle" x="295" y="192" />
+        <use href="#exchange-circle" x="415" y="192" />
+        <use href="#station-speculative-computing" x="0" y="0" />  
+        <use href="#exchange-circle" x="434" y="192" />
+        <use href="#station-pataphysics-creativity" x="0" y="0" />
+        <use href="#exchange-circle" x="506" y="266" />
         <g id="station-clinamen-group">
           <text id="station-clinamen" class="station-label"
-            x=676 y=480>
-            Clinamen
-          </text>
-          <rect id="station-clinamen-rect"
-            fill=#ff80e5
-            width="1.343691" height="2.2674308"
-            x=836 y=-167
-            transform="rotate(45)" />
+            x=525 y=340>Clinamen</text>
+          <use href="#station-rect" x="570.5" y="335" fill="#ff80e5"
+            transform="rotate(45,570.5,335)"/>
         </g>
+        <use href="#exchange-circle" x="583" y="343" />
+        <use href="#exchange-circle" x="613.5" y="373.5" />
+        <use href="#station-pataphysicalisation" x="0" y="0" />
         <g id="station-syzygy-group">
           <text id="station-syzygy" class="station-label"
-            x="775.07605" y="519.33435">
-            Syzygy
-          </text>
-          <rect id="station-syzygy-rect"
-            fill=#ff80e5
-            width="1.3436905" height="2.2674303"
-            x="915.01721" y="-175"
-            transform="rotate(45)" />
+            x="634" y="380">Syzygy</text>
+          <use href="#station-rect" x="628" y="382" fill="#ff80e5"
+            transform="rotate(45,628,382)"/>
         </g>
         <g id="station-antinomy-group">
           <text id="station-antinomy" class="station-label"
-            x="772.612" y="543">
-            Antinomy
-          </text>
-          <rect id="station-antinomy-rect"
-            fill=#ff80e5
-            width="1.3436905" height="2.2674303"
-            x="776.68353" y=534 />
+            x="640" y="405">Antinomy</text>
+          <use href="#station-rect" x="650" y="393.7" fill="#ff80e5"/>
         </g>
       </g>
       <!-- END PATAPHYSICS LABELS -->
 
       <!-- CREATIVITY LABELS -->
       <g id="creativity-5-labels-group" class="station-label-group">
-        <text id="station-speculative-computing" class="station-label"
-          x=505 y=352>
-          <tspan x=505 dy="1em">Speculative</tspan>
-          <tspan x=505 dy="1em">Computing</tspan>
-        </text>
+        <use href="#exchange-circle" x="64" y="70" />
+        <use href="#station-x2models" x="0" y="0" />
         <g id="station-x3models-group">
           <text id="station-x3models" class="station-label"
-            x="246.35046" y="215.62918">
-            3 X Models
-          </text>
-          <rect id="station-x3models-rect"
-            fill=#ffcc00
-            width="1.3436904" height="2.2674296"
-            x="262" y="205.5" />
+            x="110" y="76">3 X Models</text>
+          <use href="#station-rect" x="120" y="64.6" fill="#ffcc00"/>
         </g>
+        <use href="#exchange-circle" x="200" y="62" />
+        <use href="#station-processes" x="0" y="0" />
+        <use href="#exchange-circle" x="300" y="62" />
+        <use href="#station-computers" x="0" y="0" />
+        <use href="#exchange-circle" x="350" y="75" />
+        <use href="#station-creative-computing" x="0" y="0" />
+        <use href="#exchange-circle" x="362" y="85" />
+        <use href="#station-computational-creativity" x="0" y="0" />
+        <use href="#exchange-circle" x="375" y="98" />
+        <use href="#station-searching-browsing" x="0" y="0" />
+        <use href="#exchange-circle" x="408" y="132" />
+        <use href="#station-disciplines" x="0" y="0" />
+        <use href="#exchange-circle" x="415" y="172" />
+        <use href="#exchange-circle" x="415" y="182" />
+        <use href="#exchange-circle" x="415" y="192" />
+        <use href="#exchange-circle" x="415" y="210" />
+        <use href="#station-pataphysics-creativity" x="0" y="0" />
+        <use href="#exchange-circle" x="415" y="270" />
+        <text id="station-speculative-computing" class="station-label"
+          x=365 y=210>
+          <tspan x=365 dy="1em">Speculative</tspan>
+          <tspan x=365 dy="1em">Computing</tspan>
+        </text>
+        <use href="#station-digital-humanities" x="0" y="0" />
+        <use href="#exchange-circle" x="415" y="286" />
+        <use href="#station-arts-humanities" x="0" y="0" />
+        <use href="#exchange-circle" x="375" y="353" />
+        <use href="#station-subjectivity" x="0" y="0" />
+        <use href="#exchange-circle" x="330" y="353" />
+        <use href="#station-objectivity" x="0" y="0" />
+        <use href="#exchange-circle" x="195" y="352" />
+        <use href="#station-coder-culture" x="0" y="0" />
+        <use href="#exchange-circle" x="185" y="340" />
+        <use href="#station-syzygy-surfer" x="0" y="0" />
+        <use href="#exchange-circle" x="164" y="319" />
+        <use href="#station-oulipo" x="0" y="0" />
+        <use href="#exchange-circle" x="74.5" y="230" />
+        <use href="#exchange-circle" x="64" y="204" />
+        <use href="#station-boden" x="0" y="0" />
+        <use href="#exchange-circle" x="64" y="100" />
+        <use href="#station-models" x="0" y="0" />
       </g>
       <!-- END CREATIVITY LABELS -->
 
@@ -5352,9 +5363,9 @@ viewBox="130 130 750 550" -->
             transform=rotate(-90) />
         </g>
         <text id="station-x2models" class="station-label"
-          x="170.1022" y="196.20856" text-anchor=end>
-          <tspan x="172.50455" y="196.20856">2 X</tspan>
-          <tspan x="170.1022" y="202.20856">Models</tspan>
+          x="27" y="60" text-anchor=end>
+          <tspan x="27" y="60">2 X</tspan>
+          <tspan x="27" y="65">Models</tspan>
         </text>
         <g id="station-MMCE-group">
           <text id="station-MMCE" class="station-label"
@@ -5368,9 +5379,7 @@ viewBox="130 130 750 550" -->
             ry="0" rx="0" />
         </g>
         <text id="station-processes" class="station-label"
-          x=315 y=215>
-          Processes
-        </text>
+          x=185 y=75>Processes</text>
         <g id="station-creative-tripod-group">
           <text id="station-creative-tripod" class="station-label"
             x=358 y=145>
@@ -5394,27 +5403,25 @@ viewBox="130 130 750 550" -->
             x=390 y=195 />
         </g>
         <text id="station-computers" class="station-label"
-          x="433.87869" y="164.74704">
-          Computers
-        </text>
+          x="278" y="20">Computers</text>
         <text id="station-creative-computing" class="station-label"
-          x=480 y=210 text-anchor=end>
-          <tspan x=480 dy="1em">Creative</tspan>
-          <tspan x=480 dy="1em">Computing</tspan>
+          x=340 y=70 text-anchor=end>
+          <tspan x=340 dy="1em">Creative</tspan>
+          <tspan x=340 dy="1em">Computing</tspan>
         </text>
         <text id="station-computational-creativity" class="station-label"
-          x="498.48593" y="236.78169" text-anchor=end>
-          <tspan x=498 dy="1em">Computational</tspan>
-          <tspan x=498 dy="1em">Creativity</tspan>
+          x="350" y="93" text-anchor=end>
+          <tspan x=350 dy="1em">Computational</tspan>
+          <tspan x=350 dy="1em">Creativity</tspan>
         </text>
         <text id="station-ranking" class="station-label"
           x=498 y=190>
           Ranking
         </text>
         <text id="station-searching-browsing" class="station-label"
-          x=552 y=196>
-          <tspan x=552 dy="1em">Searching &amp;</tspan>
-          <tspan x=552 dy="1em">Browsing</tspan>
+          x=415 y=60>
+          <tspan x=415 dy="1em">Searching &amp;</tspan>
+          <tspan x=415 dy="1em">Browsing</tspan>
         </text>
         <g id="station-precision-recall-group">
           <text id="station-precision-recall" class="station-label"
@@ -5452,9 +5459,9 @@ viewBox="130 130 750 550" -->
         <text id="station-disciplines" class="station-label"
           x="355" y="140">Disciplines</text>
         <text id="station-pataphysics-creativity" class="station-label"
-          x=582 y=334>
-          <tspan x=582 dy="1em">Pataphysics &amp;</tspan>
-          <tspan x=582 dy="1em">Creativity</tspan>
+          x=446 y=180>
+          <tspan x=446 dy="1em">Pataphysics &amp;</tspan>
+          <tspan x=446 dy="1em">Creativity</tspan>
         </text> 
         <g id="station-abstract-concrete-group">
           <text id="station-abstract-concrete" class="station-label"
@@ -5478,15 +5485,13 @@ viewBox="130 130 750 550" -->
 
       <!-- INTERPRETATION LABELS -->
       <g id="interpretation-9-labels-group" class="station-label-group">
-        <use xlink:href="#station-contributions2" x="0" y="0" />
+        <use href="#station-contributions2" x="0" y="0" />
         <text id="station-framework" class="station-label"
           x=243 y=265>
           Framework
         </text>
         <text id="station-boden" class="station-label"
-          x=208 y=334>
-          Boden
-        </text>
+          x=70 y=190>Boden</text>
         <text id="station-un-definitions" class="station-label"
           x=220 y=415>
           <tspan x=220 dy="1em">(Un-)</tspan>
@@ -5555,6 +5560,10 @@ viewBox="130 130 750 550" -->
 
       <!-- IMPLEMENTATION LABELS -->
       <g id="implementation-10-labels-group" class="station-label-group">
+
+        <use href="#exchange-circle" x="174" y="310" />
+        <use href="#station-oulipo" x="0" y="0" />
+
         <g id="station-python-group">
           <text id="station-python" class="station-label"
             x="766.42688" y="304.19455">
@@ -5810,9 +5819,7 @@ viewBox="130 130 750 550" -->
           <tspan x=178 dy="1em">creativty</tspan>
         </text>
         <text id="station-models" class="station-label"
-          x=144 y=241>
-          Models
-        </text>
+          x=4 y=102>Models</text>
         <g id="station-errors-group">
           <text id="station-errors" class="station-label"
             x=700 y=286>
@@ -5846,7 +5853,7 @@ viewBox="130 130 750 550" -->
           Numbers
         </text>
         <text id="station-pataphysicalisation" class="station-label"
-          x="647.5957" y="495.94394">
+          x="500" y="354">
           Pataphysicalisation
         </text>
         <text id="station-wordnet" class="station-label"
@@ -5976,6 +5983,98 @@ viewBox="130 130 750 550" -->
         <rect x="334.5" y="174.5" width="1" height="26" fill="white"/>
       </g>
 
+      <g class="connect-4 connect-2" id="babel-connector">
+        <rect x="188.3" y="458.6" width="3.4" height="3" fill="black"/>
+        <rect x="188.3" y="459.6" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-4 connect-2" id="queneau-connector">
+        <rect x="188.3" y="428.6" width="3.4" height="3" fill="black"/>
+        <rect x="188.3" y="429.6" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-4 connect-2" id="borges-connector">
+        <rect x="188.3" y="414.6" width="3.4" height="3" fill="black"/>
+        <rect x="188.3" y="415.6" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-4 connect-2" id="faustroll-connector">
+        <rect x="188.3" y="398.6" width="3.4" height="3" fill="black"/>
+        <rect x="188.3" y="399.6" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-4 connect-2" id="syzygy-connector">
+        <rect x="188.3" y="338.6" width="3.4" height="3" fill="black"/>
+        <rect x="188.3" y="339.6" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-4 connect-2 connect-10 connect-5" id="oulipo-connector">
+        <rect x="188.3" y="308.6" width="3.4" height="3" fill="black"/>
+        <rect x="188.3" y="309.6" width="3.4" height="1" fill="white"/>
+
+        <rect x="177.5" y="308.6" width="4.3" height="3" fill="black"/>
+        <rect x="177.5" y="309.6" width="4.3" height="1" fill="white"/>
+
+        <rect x="165.5" y="315.5" width="6.5" height="3" fill="black" 
+          transform="rotate(-45,165.5,315.5)" />
+        <rect x="165.7" y="316.7" width="8" height="1" fill="white"
+          transform="rotate(-45,165.7,316.7)" />
+      </g>
+
+      <g class="connect-4 connect-1" id="pataintro-connector">
+        <rect x="508" y="263" width="12.3" height="3" fill="black" 
+          transform="rotate(-45,508,263)"/>
+        <rect x="506" y="266" width="16" height="1" fill="white"
+          transform="rotate(-45,505.2,263)"/>
+      </g>
+
+      <g class="connect-5 connect-3" id="disciplines-connector">
+        <rect x="410" y="128" width="3" height="3" fill="black" 
+          transform="rotate(-45,410,128)"
+          />
+        <rect x="409.2" y="129.2" width="5" height="1" fill="white"
+          transform="rotate(-45,410.2,129.2)"
+          />
+      </g>
+
+      <g class="connect-5 connect-4 connect-8" id="pataphysics-creativity-connector">
+        <rect x="417" y="206" width="18.5" height="3" fill="black" 
+          transform="rotate(-45,417,206)"
+          />
+        <rect x="416" y="208.5" width="22" height="1" fill="white"
+          transform="rotate(-45,416,208.5)"
+          />
+      </g>
+
+      <g class="connect-5 connect-3" id="digital-humanities-connector">
+        <rect x="418.3" y="268.7" width="3.4" height="3" fill="black"/>
+        <rect x="418.3" y="269.7" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-5 connect-3" id="arts-humanities-connector">
+        <rect x="418.3" y="284.7" width="3.4" height="3" fill="black"/>
+        <rect x="418.3" y="285.7" width="3.4" height="1" fill="white"/>
+      </g>
+
+      <g class="connect-5 connect-3" id="subjectivity-connector">
+        <rect x="373.5" y="346.5" width="3" height="3.3" fill="black"/>
+        <rect x="374.5" y="346.5" width="1" height="3.3" fill="white"/>
+      </g>
+
+      <g class="connect-5 connect-3" id="objectivity-connector">
+        <rect x="328.5" y="346.5" width="3" height="3.3" fill="black"/>
+        <rect x="329.5" y="346.5" width="1" height="3.3" fill="white"/>
+      </g>
+
+
+<!-- 
+x="415" y="270" />
+        <use href="#station-digital-humanities" x="0" y="0" />
+        <use href="#exchange-circle" x="415" y="286"  -->
+
+<!-- e" x="415" y="210" /> -->
+<!-- transform="rotate(-45,410,128)" -->
+
 
 
     </g> <!-- END EXCHANGE CONNECTORS -->
@@ -5993,7 +6092,7 @@ viewBox="130 130 750 550" -->
 
   <!-- <rect id="train" fill="black" x="5" y="5" width="20" height="10"/>
   <animateMotion
-    xlink:href="#train"
+    href="#train"
     begin="click"
     x="-5" y="-10"
     dur="20s"
