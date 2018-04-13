@@ -12,9 +12,11 @@
 ## TODO: update coords for
 
 - [x] lines
-- [ ] clusters
-- [ ] appendices
-
+- [x] clusters
+- [x] appendices
+- [ ] labels
+- [ ] exchanges
+- [ ] ports
 
 
 
