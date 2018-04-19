@@ -1,18 +1,18 @@
 (function(){ 
   
-let checkCoords = document.getElementById("show-coords");
+// let checkCoords = document.getElementById("show-coords");
 let checkClusters = document.getElementById("show-clusters");
-let checkLabels = document.getElementById("show-labels");
-let checkLines = document.getElementById("show-lines");
-let checkOldLines = document.getElementById("show-oldlines");
+// let checkLabels = document.getElementById("show-labels");
+// let checkLines = document.getElementById("show-lines");
+// let checkOldLines = document.getElementById("show-oldlines");
 let checkAppendices = document.getElementById("show-appendices");
-let checkExchanges = document.getElementById("show-exchanges");
+// let checkExchanges = document.getElementById("show-exchanges");
 
-let coords = document.getElementById("coordinates");
-let exchanges = document.getElementById("exchanges");
+// let coords = document.getElementById("coordinates");
+// let exchanges = document.getElementById("exchanges");
 let appendices = document.getElementById("appendices");
-let lines = document.getElementById("lines");
-let labels = document.getElementById("labels");
+// let lines = document.getElementById("lines");
+// let labels = document.getElementById("labels");
 let clusters = document.getElementById("clusters");
 
 let check1 = document.getElementById("show-1");
@@ -85,6 +85,8 @@ for (let i=1; i<=14; i++) {
       // console.log(`${k} add dim to ${linesOnly[numk].id} and ${labelsOnly[numk].id}`);
       linesOnly[numk].classList.add("dim");
       labelsOnly[numk].classList.add("dim");
+      appendices.classList.add("dim");
+      clusters.classList.add("dim");
     }
     // console.log(`remove dim from ${lineID} and ${labelsID}`);
     line.classList.remove("dim");
@@ -99,6 +101,8 @@ for (let i=1; i<=14; i++) {
       linesOnly[numk].classList.remove("dim");
       labelsOnly[numk].classList.remove("dim");
       connectors.classList.remove("dim");
+      appendices.classList.remove("dim");
+      clusters.classList.remove("dim");
     }
   });
 }
@@ -106,23 +110,23 @@ for (let i=1; i<=14; i++) {
 
 
 
-let toggleCoords = false; // unhidden
-let toggleClusters = true; // hidden
-let toggleExchanges = true; // hidden
-let toggleAppendices = true; // hidden
+// let toggleCoords = false; // unhidden
+let toggleClusters = false; // unhidden
+// let toggleExchanges = true; // hidden
+let toggleAppendices = false; // unhidden
 // let toggleLines = false; // unhidden
-let toggleLabels = false; // unhidden
-let toggleOldLines = false; // unhidden
+// let toggleLabels = false; // unhidden
+// let toggleOldLines = false; // unhidden
 
-checkCoords.addEventListener("change", function(){
-  if (toggleCoords) {
-    coords.classList.remove("hide");
-    toggleCoords = false;
-  } else {
-    coords.classList.add("hide");
-    toggleCoords = true;
-  }
-});
+// checkCoords.addEventListener("change", function(){
+//   if (toggleCoords) {
+//     coords.classList.remove("hide");
+//     toggleCoords = false;
+//   } else {
+//     coords.classList.add("hide");
+//     toggleCoords = true;
+//   }
+// });
 
 
 // HIDE AND SHOW OLD LINES
@@ -140,15 +144,15 @@ checkCoords.addEventListener("change", function(){
 //   }
 // });
 
-checkExchanges.addEventListener("change", function(){
-  if (toggleExchanges) {
-    exchanges.classList.remove("hide");
-    toggleExchanges = false;
-  } else {
-    exchanges.classList.add("hide");
-    toggleExchanges = true;
-  }
-});
+// checkExchanges.addEventListener("change", function(){
+//   if (toggleExchanges) {
+//     exchanges.classList.remove("hide");
+//     toggleExchanges = false;
+//   } else {
+//     exchanges.classList.add("hide");
+//     toggleExchanges = true;
+//   }
+// });
 
 checkClusters.addEventListener("change", function(){
   if (toggleClusters) {

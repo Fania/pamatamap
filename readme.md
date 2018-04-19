@@ -2,23 +2,6 @@
 
 ## TODO
 
-- add exchange connectors separately, so the exchange blob can be associated with its line and on hover the connector can be hidden
-- check if duplicate labels look weird, maybe change visibility until hovered over
-- add appendices to hover hide
-
-
-
-
-## TODO: update coords for
-
-- [x] lines
-- [x] clusters
-- [x] appendices
-- [ ] labels
-- [ ] exchanges
-- [ ] ports
-
-
 
 
 
